@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+  <!-- NECROMANCER — Tattered black robes, bone staff, glowing green eyes, skull motifs, pale skin -->
+  <!-- Colour palette: void black, sickly green, bone white, deep purple -->
+  <ellipse cx="32" cy="48" rx="14" ry="5" fill="#020208" opacity="0.5"/>
+  <!-- Tattered robe -->
+  <path d="M20,26 Q12,40 10,58 Q20,52 32,56 Q44,52 54,58 Q52,40 44,26 Z" fill="#0a0814"/>
+  <!-- Robe tears at bottom -->
+  <path d="M10,58 Q13,52 12,46" stroke="#0a0814" stroke-width="2" fill="none"/>
+  <path d="M54,58 Q51,52 52,46" stroke="#0a0814" stroke-width="2" fill="none"/>
+  <path d="M32,56 Q34,50 33,44" stroke="#0a0814" stroke-width="1.5" fill="none"/>
+  <!-- Robe decay pattern -->
+  <path d="M16,38 Q14,44 13,52" stroke="#1a0828" stroke-width="3" fill="none" opacity="0.8"/>
+  <path d="M48,38 Q50,44 51,52" stroke="#1a0828" stroke-width="3" fill="none" opacity="0.8"/>
+  <!-- Purple trim -->
+  <path d="M20,26 Q32,22 44,26" stroke="#4010a0" stroke-width="1.5" fill="none"/>
+  <!-- Body -->
+  <rect x="22" y="20" width="20" height="10" rx="3" fill="#0a0814"/>
+  <!-- Skull collar decoration -->
+  <ellipse cx="26" cy="24" rx="2.5" ry="2.5" fill="#d8d0c0"/>
+  <ellipse cx="32" cy="23" rx="2.5" ry="2.5" fill="#d8d0c0"/>
+  <ellipse cx="38" cy="24" rx="2.5" ry="2.5" fill="#d8d0c0"/>
+  <ellipse cx="26" cy="24" rx="1.5" ry="1.2" fill="#100808" opacity="0.8"/>
+  <ellipse cx="32" cy="23" rx="1.5" ry="1.2" fill="#100808" opacity="0.8"/>
+  <ellipse cx="38" cy="24" rx="1.5" ry="1.2" fill="#100808" opacity="0.8"/>
+  <!-- Arms — bony, wrapped -->
+  <rect x="10" y="22" width="10" height="16" rx="4" fill="#0a0814"/>
+  <rect x="44" y="22" width="10" height="16" rx="4" fill="#0a0814"/>
+  <!-- Bony hands -->
+  <ellipse cx="15" cy="40" rx="4" ry="3" fill="#c8c0a8"/>
+  <ellipse cx="49" cy="40" rx="4" ry="3" fill="#c8c0a8"/>
+  <!-- Bone staff (left hand, tall with skull) -->
+  <rect x="6" y="4" width="3" height="54" rx="1.5" fill="#c8c0a8"/>
+  <!-- Skull atop staff -->
+  <ellipse cx="7.5" cy="8" rx="5" ry="5" fill="#d8d0c0"/>
+  <ellipse cx="5.5" cy="9" rx="1.2" ry="1.5" fill="#0a0814"/>
+  <ellipse cx="9.5" cy="9" rx="1.2" ry="1.5" fill="#0a0814"/>
+  <path d="M4.5,12 Q7.5,13.5 10.5,12" stroke="#0a0814" stroke-width="0.8" fill="none"/>
+  <!-- Skull glow -->
+  <ellipse cx="7.5" cy="8" rx="6" ry="6" fill="none" stroke="#20c040" stroke-width="1" opacity="0.6"/>
+  <!-- Necrotic energy particles around hand -->
+  <circle cx="50" cy="38" r="2" fill="#20c040" opacity="0.7"/>
+  <circle cx="53" cy="42" r="1.5" fill="#20c040" opacity="0.5"/>
+  <circle cx="47" cy="43" r="1" fill="#60ff80" opacity="0.6"/>
+  <!-- Raised undead wisps -->
+  <path d="M44,36 Q48,30 52,28" stroke="#20c040" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <!-- Hood — deep, shadowed -->
+  <path d="M18,16 Q18,4 32,2 Q46,4 46,16 Q44,10 32,8 Q20,10 18,16 Z" fill="#050310"/>
+  <path d="M18,18 Q18,8 32,6 Q46,8 46,18 L44,22 Q38,14 32,14 Q26,14 20,22 Z" fill="#0a0814"/>
+  <!-- Face — sunken, pale, gaunt -->
+  <ellipse cx="32" cy="19" rx="9" ry="8" fill="#c0b8a8"/>
+  <!-- Sunken cheeks -->
+  <ellipse cx="26" cy="21" rx="2" ry="1.5" fill="#a09888" opacity="0.5"/>
+  <ellipse cx="38" cy="21" rx="2" ry="1.5" fill="#a09888" opacity="0.5"/>
+  <!-- Eyes — glowing green, hollow -->
+  <ellipse cx="28" cy="19" rx="3" ry="2.5" fill="#050808"/>
+  <ellipse cx="36" cy="19" rx="3" ry="2.5" fill="#050808"/>
+  <ellipse cx="28" cy="19" rx="2" ry="1.8" fill="#00b020"/>
+  <ellipse cx="36" cy="19" rx="2" ry="1.8" fill="#00b020"/>
+  <ellipse cx="28" cy="18.5" rx="1" ry="1" fill="#80ff90"/>
+  <ellipse cx="36" cy="18.5" rx="1" ry="1" fill="#80ff90"/>
+  <!-- Hollow eye socket -->
+  <ellipse cx="28" cy="19" rx="3.5" ry="3" fill="none" stroke="#00c030" stroke-width="0.8" opacity="0.5"/>
+  <ellipse cx="36" cy="19" rx="3.5" ry="3" fill="none" stroke="#00c030" stroke-width="0.8" opacity="0.5"/>
+  <!-- Nose — sunken -->
+  <path d="M30.5,21.5 Q32,22.5 33.5,21.5" stroke="#a09070" stroke-width="0.8" fill="none"/>
+  <!-- Mouth — thin, cruel smile -->
+  <path d="M28,23.5 Q32,25 36,23.5" stroke="#806050" stroke-width="1" fill="none"/>
+  <!-- Eyebrows — none (bare skull-like) -->
+</svg>

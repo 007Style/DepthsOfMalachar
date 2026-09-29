@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/enemies/enemy_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "shadow_stalker"
+enemy_name = "Shadow Stalker"
+display_name = "Shadow Stalker"
+base_hp = 60.0
+base_damage = 18.0
+move_speed = 130.0
+attack_range = 36.0
+attack_cooldown = 0.85
+element = 6
+coin_type = 0
+coin_drop_min = 2
+coin_drop_max = 8
+xp_reward = 30
+revive_crystal_drop_chance = 0.02
+has_weak_point = true
+weak_point_multiplier = 2.0
+can_evolve = true

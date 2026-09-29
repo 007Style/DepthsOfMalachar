@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96">
+  <!-- Void entity — dark robed form with fractures of void energy -->
+  <path d="M20 36 Q16 56 20 78 L76 78 Q80 56 76 36 Z" fill="#110022"/>
+  <!-- Void fracture lines on body -->
+  <path d="M32 40 Q36 54 30 66" fill="none" stroke="#6600cc" stroke-width="2" opacity="0.8"/>
+  <path d="M60 42 Q56 56 62 68" fill="none" stroke="#8800ff" stroke-width="2" opacity="0.8"/>
+  <path d="M48 38 L44 58 L52 72" fill="none" stroke="#aa44ff" stroke-width="1.5" opacity="0.7"/>
+  <!-- Head — shifting void mass -->
+  <ellipse cx="48" cy="22" rx="24" ry="20" fill="#1a0033"/>
+  <!-- Fractured halo ring -->
+  <circle cx="48" cy="22" r="22" fill="none" stroke="#6600cc" stroke-width="2" opacity="0.7" stroke-dasharray="8,4"/>
+  <!-- Multiple eyes — unsettling arrangement -->
+  <ellipse cx="36" cy="18" rx="7" ry="6" fill="#000000"/>
+  <ellipse cx="60" cy="18" rx="7" ry="6" fill="#000000"/>
+  <ellipse cx="48" cy="28" rx="5" ry="4" fill="#000000"/>
+  <circle cx="36" cy="18" r="4" fill="#aa00ff" opacity="0.95"/>
+  <circle cx="60" cy="18" r="4" fill="#aa00ff" opacity="0.95"/>
+  <circle cx="48" cy="28" r="2.5" fill="#cc44ff" opacity="0.9"/>
+  <circle cx="36" cy="18" r="1.5" fill="#ffffff" opacity="0.5"/>
+  <circle cx="60" cy="18" r="1.5" fill="#ffffff" opacity="0.5"/>
+  <!-- No mouth — just void -->
+  <!-- Void arms reaching outward -->
+  <path d="M20 44 Q6 38 2 26" fill="none" stroke="#1a0033" stroke-width="8" stroke-linecap="round"/>
+  <path d="M76 44 Q90 38 94 26" fill="none" stroke="#1a0033" stroke-width="8" stroke-linecap="round"/>
+  <!-- Void hands — spreading darkness -->
+  <circle cx="2" cy="24" r="8" fill="#1a0033"/>
+  <circle cx="94" cy="24" r="8" fill="#1a0033"/>
+  <!-- Clone shadow duplicates (smaller) -->
+  <ellipse cx="16" cy="72" rx="8" ry="14" fill="#220044" opacity="0.5"/>
+  <ellipse cx="80" cy="72" rx="8" ry="14" fill="#220044" opacity="0.5"/>
+  <!-- Void signature at base -->
+  <ellipse cx="48" cy="82" rx="28" ry="6" fill="#330066" opacity="0.4"/>
+  <!-- Outer void ring -->
+  <circle cx="48" cy="50" r="46" fill="none" stroke="#6600cc" stroke-width="1.5" opacity="0.2"/>
+</svg>

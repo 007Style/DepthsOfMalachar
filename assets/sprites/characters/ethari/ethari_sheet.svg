@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="64" viewBox="0 0 256 64">
+  <!-- Ethari Sprite Sheet — 4 frames: idle, walk, attack, death -->
+  <!-- Each frame is 64x64 px. Top-down 2D perspective. -->
+  <!-- Ethari: silver-white armour, golden divine core, dark cape, white hair, violet glowing eyes -->
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FRAME 0 — IDLE (x=0)                       -->
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- Cape / shadow base -->
+  <ellipse cx="32" cy="44" rx="14" ry="6" fill="#1a0a2e" opacity="0.5"/>
+  <!-- Body — silver armour torso -->
+  <rect x="22" y="24" width="20" height="22" rx="4" fill="#c8d4e0"/>
+  <!-- Armour highlights -->
+  <rect x="24" y="26" width="7" height="10" rx="2" fill="#e8f0f8"/>
+  <rect x="33" y="26" width="7" height="10" rx="2" fill="#e8f0f8"/>
+  <!-- Divine golden core (chest glow) -->
+  <ellipse cx="32" cy="32" rx="5" ry="6" fill="#f0c040"/>
+  <ellipse cx="32" cy="32" rx="3" ry="4" fill="#fff0a0"/>
+  <!-- Armour pauldrons (shoulders) -->
+  <ellipse cx="20" cy="27" rx="5" ry="4" fill="#b0bcc8"/>
+  <ellipse cx="44" cy="27" rx="5" ry="4" fill="#b0bcc8"/>
+  <!-- Arms -->
+  <rect x="14" y="28" width="7" height="14" rx="3" fill="#c8d4e0"/>
+  <rect x="43" y="28" width="7" height="14" rx="3" fill="#c8d4e0"/>
+  <!-- Gauntlets -->
+  <rect x="13" y="38" width="8" height="6" rx="2" fill="#8090a0"/>
+  <rect x="43" y="38" width="8" height="6" rx="2" fill="#8090a0"/>
+  <!-- Legs -->
+  <rect x="23" y="44" width="8" height="12" rx="3" fill="#9098a8"/>
+  <rect x="33" y="44" width="8" height="12" rx="3" fill="#9098a8"/>
+  <!-- Boots -->
+  <rect x="22" y="53" width="10" height="7" rx="2" fill="#505870"/>
+  <rect x="32" y="53" width="10" height="7" rx="2" fill="#505870"/>
+  <!-- Cape overlay -->
+  <path d="M18,26 Q12,38 14,56 Q20,50 26,54 Q28,40 28,26 Z" fill="#1a0a2e" opacity="0.85"/>
+  <path d="M46,26 Q52,38 50,56 Q44,50 38,54 Q36,40 36,26 Z" fill="#1a0a2e" opacity="0.85"/>
+  <!-- Cape inner sheen -->
+  <path d="M20,28 Q15,40 17,52 Q21,47 25,50 Q27,38 27,28 Z" fill="#2a1a4e" opacity="0.6"/>
+  <!-- Head -->
+  <ellipse cx="32" cy="18" rx="10" ry="10" fill="#f0e8d8"/>
+  <!-- Hair — white/silver -->
+  <path d="M22,14 Q20,8 26,6 Q32,4 38,6 Q44,8 42,14" fill="#e8eef8"/>
+  <path d="M22,14 Q18,10 20,6 Q22,4 24,8" fill="#e8eef8"/>
+  <path d="M42,14 Q46,10 44,6 Q42,4 40,8" fill="#e8eef8"/>
+  <!-- Hair strands flowing -->
+  <path d="M24,12 Q20,16 18,22 Q16,28 18,30" stroke="#d0d8f0" stroke-width="1.5" fill="none"/>
+  <path d="M40,12 Q44,16 46,22 Q48,28 46,30" stroke="#d0d8f0" stroke-width="1.5" fill="none"/>
+  <!-- Face — eyes (violet glow) -->
+  <ellipse cx="28" cy="18" rx="3" ry="3" fill="#4010a0"/>
+  <ellipse cx="36" cy="18" rx="3" ry="3" fill="#4010a0"/>
+  <ellipse cx="28" cy="18" rx="2" ry="2" fill="#8040e0"/>
+  <ellipse cx="36" cy="18" rx="2" ry="2" fill="#8040e0"/>
+  <ellipse cx="28" cy="17.5" rx="1" ry="1" fill="#c080ff"/>
+  <ellipse cx="36" cy="17.5" rx="1" ry="1" fill="#c080ff"/>
+  <!-- Eye glow aura -->
+  <ellipse cx="28" cy="18" rx="3.5" ry="3.5" fill="none" stroke="#6020c0" stroke-width="0.8" opacity="0.7"/>
+  <ellipse cx="36" cy="18" rx="3.5" ry="3.5" fill="none" stroke="#6020c0" stroke-width="0.8" opacity="0.7"/>
+  <!-- Nose -->
+  <ellipse cx="32" cy="20" rx="1" ry="0.8" fill="#d0b898"/>
+  <!-- Mouth — slight determined expression -->
+  <path d="M29,22.5 Q32,24 35,22.5" stroke="#a08060" stroke-width="1" fill="none"/>
+  <!-- Eyebrows — focused/determined -->
+  <path d="M25,15.5 Q28,14.5 31,15.5" stroke="#b0a080" stroke-width="1.2" fill="none"/>
+  <path d="M33,15.5 Q36,14.5 39,15.5" stroke="#b0a080" stroke-width="1.2" fill="none"/>
+  <!-- Crown/divine mark on forehead -->
+  <path d="M30,11 L32,8 L34,11" stroke="#f0c040" stroke-width="1.5" fill="none"/>
+  <ellipse cx="32" cy="10" rx="1.5" ry="1.5" fill="#f0c040" opacity="0.8"/>
+  <!-- Weapon (default sword, held at side) -->
+  <rect x="11" y="34" width="2.5" height="18" rx="1" fill="#c8b040" transform="rotate(-15,12.5,43)"/>
+  <rect x="8" y="40" width="9" height="2" rx="1" fill="#9090a0" transform="rotate(-15,12.5,43)"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FRAME 1 — WALK (x=64)                      -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g transform="translate(64,0)">
+    <ellipse cx="32" cy="44" rx="14" ry="6" fill="#1a0a2e" opacity="0.5"/>
+    <rect x="22" y="24" width="20" height="22" rx="4" fill="#c8d4e0"/>
+    <rect x="24" y="26" width="7" height="10" rx="2" fill="#e8f0f8"/>
+    <rect x="33" y="26" width="7" height="10" rx="2" fill="#e8f0f8"/>
+    <ellipse cx="32" cy="32" rx="5" ry="6" fill="#f0c040"/>
+    <ellipse cx="32" cy="32" rx="3" ry="4" fill="#fff0a0"/>
+    <ellipse cx="20" cy="27" rx="5" ry="4" fill="#b0bcc8"/>
+    <ellipse cx="44" cy="27" rx="5" ry="4" fill="#b0bcc8"/>
+    <!-- Arms swinging -->
+    <rect x="12" y="26" width="7" height="14" rx="3" fill="#c8d4e0" transform="rotate(15,15,33)"/>
+    <rect x="45" y="30" width="7" height="14" rx="3" fill="#c8d4e0" transform="rotate(-15,48,37)"/>
+    <rect x="11" y="36" width="8" height="6" rx="2" fill="#8090a0" transform="rotate(15,15,33)"/>
+    <rect x="44" y="40" width="8" height="6" rx="2" fill="#8090a0" transform="rotate(-15,48,37)"/>
+    <!-- Legs walking (one forward one back) -->
+    <rect x="23" y="44" width="8" height="12" rx="3" fill="#9098a8" transform="rotate(-12,27,44)"/>
+    <rect x="33" y="44" width="8" height="12" rx="3" fill="#9098a8" transform="rotate(12,37,44)"/>
+    <rect x="21" y="53" width="10" height="7" rx="2" fill="#505870" transform="rotate(-12,27,44)"/>
+    <rect x="33" y="53" width="10" height="7" rx="2" fill="#505870" transform="rotate(12,37,44)"/>
+    <!-- Cape flowing with motion -->
+    <path d="M18,26 Q10,40 13,58 Q20,50 26,54 Q28,40 28,26 Z" fill="#1a0a2e" opacity="0.85"/>
+    <path d="M46,26 Q54,40 51,58 Q44,50 38,54 Q36,40 36,26 Z" fill="#1a0a2e" opacity="0.85"/>
+    <!-- Head bob slightly up -->
+    <ellipse cx="32" cy="17" rx="10" ry="10" fill="#f0e8d8"/>
+    <path d="M22,13 Q20,7 26,5 Q32,3 38,5 Q44,7 42,13" fill="#e8eef8"/>
+    <path d="M24,11 Q20,15 18,21 Q16,27 18,29" stroke="#d0d8f0" stroke-width="1.5" fill="none"/>
+    <path d="M40,11 Q44,15 46,21 Q48,27 46,29" stroke="#d0d8f0" stroke-width="1.5" fill="none"/>
+    <ellipse cx="28" cy="17" rx="3" ry="3" fill="#4010a0"/>
+    <ellipse cx="36" cy="17" rx="3" ry="3" fill="#4010a0"/>
+    <ellipse cx="28" cy="17" rx="2" ry="2" fill="#8040e0"/>
+    <ellipse cx="36" cy="17" rx="2" ry="2" fill="#8040e0"/>
+    <ellipse cx="28" cy="16.5" rx="1" ry="1" fill="#c080ff"/>
+    <ellipse cx="36" cy="16.5" rx="1" ry="1" fill="#c080ff"/>
+    <ellipse cx="32" cy="19" rx="1" ry="0.8" fill="#d0b898"/>
+    <path d="M29,21.5 Q32,23 35,21.5" stroke="#a08060" stroke-width="1" fill="none"/>
+    <path d="M25,14.5 Q28,13.5 31,14.5" stroke="#b0a080" stroke-width="1.2" fill="none"/>
+    <path d="M33,14.5 Q36,13.5 39,14.5" stroke="#b0a080" stroke-width="1.2" fill="none"/>
+    <path d="M30,10 L32,7 L34,10" stroke="#f0c040" stroke-width="1.5" fill="none"/>
+    <ellipse cx="32" cy="9" rx="1.5" ry="1.5" fill="#f0c040" opacity="0.8"/>
+    <rect x="11" y="34" width="2.5" height="18" rx="1" fill="#c8b040" transform="rotate(-20,12.5,43)"/>
+    <rect x="8" y="40" width="9" height="2" rx="1" fill="#9090a0" transform="rotate(-20,12.5,43)"/>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FRAME 2 — ATTACK (x=128)                   -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g transform="translate(128,0)">
+    <ellipse cx="32" cy="44" rx="14" ry="6" fill="#1a0a2e" opacity="0.5"/>
+    <rect x="22" y="24" width="20" height="22" rx="4" fill="#c8d4e0"/>
+    <rect x="24" y="26" width="7" height="10" rx="2" fill="#e8f0f8"/>
+    <rect x="33" y="26" width="7" height="10" rx="2" fill="#e8f0f8"/>
+    <!-- Golden core blazing during attack -->
+    <ellipse cx="32" cy="32" rx="7" ry="8" fill="#f0c040" opacity="0.5"/>
+    <ellipse cx="32" cy="32" rx="5" ry="6" fill="#f0c040"/>
+    <ellipse cx="32" cy="32" rx="3" ry="4" fill="#fff0a0"/>
+    <ellipse cx="20" cy="27" rx="5" ry="4" fill="#b0bcc8"/>
+    <ellipse cx="44" cy="27" rx="5" ry="4" fill="#b0bcc8"/>
+    <!-- Attack arm — sword thrust forward -->
+    <rect x="44" y="22" width="7" height="14" rx="3" fill="#c8d4e0" transform="rotate(-45,47,29)"/>
+    <rect x="43" y="22" width="8" height="6" rx="2" fill="#8090a0" transform="rotate(-45,47,29)"/>
+    <!-- Off arm -->
+    <rect x="14" y="28" width="7" height="14" rx="3" fill="#c8d4e0"/>
+    <rect x="13" y="38" width="8" height="6" rx="2" fill="#8090a0"/>
+    <!-- Sword swinging (extended, glowing) -->
+    <rect x="48" y="8" width="3" height="26" rx="1" fill="#f0d060" transform="rotate(-45,50,21)"/>
+    <rect x="43" y="18" width="12" height="2.5" rx="1" fill="#a0a0b0" transform="rotate(-45,50,21)"/>
+    <!-- Sword glow trail -->
+    <path d="M52,6 Q58,12 56,22 Q54,28 52,30" stroke="#f0e080" stroke-width="3" fill="none" opacity="0.5"/>
+    <rect x="22" y="44" width="8" height="12" rx="3" fill="#9098a8"/>
+    <rect x="33" y="44" width="8" height="12" rx="3" fill="#9098a8"/>
+    <rect x="22" y="53" width="10" height="7" rx="2" fill="#505870"/>
+    <rect x="32" y="53" width="10" height="7" rx="2" fill="#505870"/>
+    <path d="M18,26 Q12,38 14,56 Q20,50 26,54 Q28,40 28,26 Z" fill="#1a0a2e" opacity="0.85"/>
+    <!-- Head — aggressive expression -->
+    <ellipse cx="32" cy="18" rx="10" ry="10" fill="#f0e8d8"/>
+    <path d="M22,14 Q20,8 26,6 Q32,4 38,6 Q44,8 42,14" fill="#e8eef8"/>
+    <path d="M24,12 Q20,16 18,22" stroke="#d0d8f0" stroke-width="1.5" fill="none"/>
+    <!-- Eyes — glowing bright during attack -->
+    <ellipse cx="28" cy="18" rx="3" ry="3" fill="#2000a0"/>
+    <ellipse cx="36" cy="18" rx="3" ry="3" fill="#2000a0"/>
+    <ellipse cx="28" cy="18" rx="2.5" ry="2.5" fill="#a060ff"/>
+    <ellipse cx="36" cy="18" rx="2.5" ry="2.5" fill="#a060ff"/>
+    <ellipse cx="28" cy="17.5" rx="1.2" ry="1.2" fill="#e0c0ff"/>
+    <ellipse cx="36" cy="17.5" rx="1.2" ry="1.2" fill="#e0c0ff"/>
+    <!-- Eye glow burst -->
+    <ellipse cx="28" cy="18" rx="4" ry="4" fill="none" stroke="#8040e0" stroke-width="1" opacity="0.8"/>
+    <ellipse cx="36" cy="18" rx="4" ry="4" fill="none" stroke="#8040e0" stroke-width="1" opacity="0.8"/>
+    <!-- Furrowed brows — attack -->
+    <path d="M25,15 Q28,13.5 31,15.5" stroke="#806040" stroke-width="1.5" fill="none"/>
+    <path d="M33,15.5 Q36,13.5 39,15" stroke="#806040" stroke-width="1.5" fill="none"/>
+    <path d="M29,22.5 Q32,23.5 35,22.5" stroke="#a08060" stroke-width="1" fill="none"/>
+    <path d="M30,11 L32,8 L34,11" stroke="#f0c040" stroke-width="1.5" fill="none"/>
+    <!-- Forehead mark blazing -->
+    <ellipse cx="32" cy="10" rx="2" ry="2" fill="#f0c040"/>
+    <ellipse cx="32" cy="10" rx="3" ry="3" fill="none" stroke="#f0c040" stroke-width="0.8" opacity="0.7"/>
+  </g>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FRAME 3 — DEATH (x=192)                    -->
+  <!-- ═══════════════════════════════════════════ -->
+  <g transform="translate(192,0)">
+    <!-- Collapsed on ground -->
+    <ellipse cx="32" cy="48" rx="22" ry="8" fill="#1a0a2e" opacity="0.4"/>
+    <!-- Body horizontal -->
+    <rect x="8" y="40" width="48" height="14" rx="6" fill="#c8d4e0" transform="rotate(-10,32,47)"/>
+    <ellipse cx="22" cy="45" rx="5" ry="4" fill="#b0bcc8" transform="rotate(-10,32,47)"/>
+    <ellipse cx="42" cy="45" rx="5" ry="4" fill="#b0bcc8" transform="rotate(-10,32,47)"/>
+    <!-- Core fading -->
+    <ellipse cx="32" cy="44" rx="4" ry="4" fill="#f0c040" opacity="0.3"/>
+    <!-- Cape spread on floor -->
+    <path d="M10,42 Q6,52 10,60 Q20,56 30,58 Q28,50 26,42 Z" fill="#1a0a2e" opacity="0.7"/>
+    <path d="M54,42 Q58,52 54,60 Q44,56 34,58 Q36,50 38,42 Z" fill="#1a0a2e" opacity="0.7"/>
+    <!-- Head on side, eyes closed -->
+    <ellipse cx="18" cy="34" rx="10" ry="10" fill="#f0e8d8"/>
+    <path d="M8,30 Q6,24 12,22 Q18,20 24,22 Q30,24 28,30" fill="#e8eef8"/>
+    <!-- Closed eyes — two thin lines -->
+    <path d="M13,33 Q15,34.5 18,33" stroke="#4010a0" stroke-width="1.5" fill="none"/>
+    <path d="M18,33 Q21,34.5 24,33" stroke="#4010a0" stroke-width="1.5" fill="none"/>
+    <!-- Mouth slightly open — last breath -->
+    <path d="M15,36 Q18,37.5 22,36" stroke="#a08060" stroke-width="1" fill="none"/>
+    <!-- Divine mark fading -->
+    <path d="M16,27 L18,24 L20,27" stroke="#f0c040" stroke-width="1" fill="none" opacity="0.4"/>
+    <!-- Dissolving light particles -->
+    <circle cx="26" cy="30" r="1.5" fill="#f0c040" opacity="0.6"/>
+    <circle cx="30" cy="26" r="1" fill="#f0c040" opacity="0.5"/>
+    <circle cx="35" cy="28" r="1.5" fill="#8040e0" opacity="0.5"/>
+    <circle cx="40" cy="24" r="1" fill="#8040e0" opacity="0.4"/>
+    <circle cx="44" cy="32" r="1" fill="#f0c040" opacity="0.3"/>
+  </g>
+</svg>

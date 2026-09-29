@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ClassData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/classes/class_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/player/stats.gd" id="2"]
+
+[sub_resource type="Resource" id="AssassinStats"]
+script = ExtResource("2")
+max_hp = 88.0
+current_hp = 88.0
+base_damage = 20.0
+attack_speed = 1.6
+move_speed = 185.0
+crit_chance = 0.25
+crit_multiplier = 3.5
+defence = 0.0
+dodge_chance = 0.15
+lifesteal = 0.0
+xp_multiplier = 1.0
+coin_multiplier = 1.5
+
+[resource]
+script = ExtResource("1")
+class_type = 7
+class_name_text = "Assassin"
+base_stats = SubResource("AssassinStats")
+passive_description = "Lethal Tempo: Each consecutive hit on the same target increases damage by 5%, up to 30%."
+ability_1_name = "Shadow Step"
+ability_1_description = "Instantly dash behind a target enemy."
+ability_2_name = "Garrote"
+ability_2_description = "Silence and poison the target."
+ultimate_name = "Shadow Dance"
+ultimate_description = "Become untargetable and strike all enemies 5 times."
+ultimate_cooldown = 20.0
+has_stances = false
+is_locked = false

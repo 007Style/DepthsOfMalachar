@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ClassData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/classes/class_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/player/stats.gd" id="2"]
+
+[sub_resource type="Resource" id="NecromancerStats"]
+script = ExtResource("2")
+max_hp = 95.0
+current_hp = 95.0
+base_damage = 18.0
+attack_speed = 0.85
+move_speed = 135.0
+crit_chance = 0.08
+crit_multiplier = 2.0
+defence = 2.0
+dodge_chance = 0.0
+lifesteal = 0.05
+xp_multiplier = 1.3
+coin_multiplier = 1.0
+
+[resource]
+script = ExtResource("1")
+class_type = 3
+class_name_text = "Necromancer"
+base_stats = SubResource("NecromancerStats")
+passive_description = "Soul Harvest: Gain HP on kill equal to 5% of enemy's max HP."
+ability_1_name = "Raise Undead"
+ability_1_description = "Reanimate a slain enemy as a temporary ally."
+ability_2_name = "Bone Spear"
+ability_2_description = "Hurl a piercing bone dealing dark damage."
+ultimate_name = "Plague Cloud"
+ultimate_description = "Release a poison cloud that kills all weakened enemies instantly."
+ultimate_cooldown = 35.0
+has_stances = false
+is_locked = false

@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3 uid="uid://town_ui"]
+
+[ext_resource type="Script" path="res://scripts/ui/town_ui.gd" id="1_town_ui"]
+
+[node name="TownUI" type="CanvasLayer"]
+script = ExtResource("1_town_ui")
+
+[node name="MainPanel" type="Control" parent="."]
+offset_right = 480.0
+offset_bottom = 854.0
+
+[node name="ShopPanel" type="Control" parent="."]
+visible = false
+
+[node name="ArtifactPanel" type="Control" parent="."]
+visible = false
+
+[node name="UpgradePanel" type="Control" parent="."]
+visible = false
+
+[node name="GamblingPanel" type="Control" parent="."]
+visible = false
+
+[node name="BlackMarketPanel" type="Control" parent="."]
+visible = false
+
+[node name="LoreLabel" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 600.0
+offset_right = 460.0
+offset_bottom = 700.0
+text = "Lore NPC dialogue appears here."
+autowrap_mode = 3
+
+[node name="CloseButton" type="Button" parent="."]
+offset_left = 200.0
+offset_top = 720.0
+offset_right = 280.0
+offset_bottom = 760.0
+text = "Close"

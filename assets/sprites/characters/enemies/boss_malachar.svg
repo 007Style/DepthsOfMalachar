@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- MALACHAR, DEMON KING — massive, all-element final boss -->
+  <!-- Dark armoured body — imposing demonic physique -->
+  <rect x="28" y="50" width="72" height="58" rx="8" fill="#1a0022"/>
+  <!-- All-element energy on armour body -->
+  <path d="M36 56 Q40 70 34 82" fill="none" stroke="#ff4400" stroke-width="2.5" opacity="0.8"/>
+  <path d="M60 54 Q64 72 58 84" fill="none" stroke="#0066ff" stroke-width="2" opacity="0.7"/>
+  <path d="M86 56 Q82 70 88 82" fill="none" stroke="#00cc44" stroke-width="2" opacity="0.7"/>
+  <!-- Elemental runes on chest -->
+  <circle cx="64" cy="72" r="12" fill="#0a0011" stroke="#cc00ff" stroke-width="2"/>
+  <path d="M58 66 L70 78 M70 66 L58 78 M64 62 L64 82" stroke="#cc00ff" stroke-width="1.5" opacity="0.9"/>
+  <!-- Demonic wings — spread full -->
+  <path d="M28 54 Q8 30 4 6 Q10 20 18 36 Q22 46 28 56 Z" fill="#2a0033" opacity="0.9"/>
+  <path d="M100 54 Q120 30 124 6 Q118 20 110 36 Q106 46 100 56 Z" fill="#2a0033" opacity="0.9"/>
+  <!-- Wing bone ridges -->
+  <line x1="4" y1="6" x2="28" y2="56" stroke="#440055" stroke-width="2" opacity="0.7"/>
+  <line x1="8" y1="10" x2="26" y2="54" stroke="#440055" stroke-width="1.5" opacity="0.6"/>
+  <line x1="124" y1="6" x2="100" y2="56" stroke="#440055" stroke-width="2" opacity="0.7"/>
+  <line x1="120" y1="10" x2="102" y2="54" stroke="#440055" stroke-width="1.5" opacity="0.6"/>
+  <!-- Secondary smaller wings -->
+  <path d="M36 68 Q20 60 16 50 Q22 58 32 68 Z" fill="#3a0044" opacity="0.7"/>
+  <path d="M92 68 Q108 60 112 50 Q106 58 96 68 Z" fill="#3a0044" opacity="0.7"/>
+  <!-- HEAD — the terrifying face of the Demon King -->
+  <ellipse cx="64" cy="34" rx="30" ry="28" fill="#220033"/>
+  <!-- Massive twisted demonic horns -->
+  <path d="M38 16 Q28 0 24 -8" fill="none" stroke="#440033" stroke-width="8" stroke-linecap="round"/>
+  <path d="M90 16 Q100 0 104 -8" fill="none" stroke="#440033" stroke-width="8" stroke-linecap="round"/>
+  <path d="M40 14 Q32 2 30 -4" fill="none" stroke="#660044" stroke-width="5" stroke-linecap="round"/>
+  <path d="M88 14 Q96 2 98 -4" fill="none" stroke="#660044" stroke-width="5" stroke-linecap="round"/>
+  <!-- Five-phase eyes — all radiate different elements per phase -->
+  <!-- Phase 1: fire eyes -->
+  <ellipse cx="48" cy="30" rx="10" ry="9" fill="#000000"/>
+  <ellipse cx="80" cy="30" rx="10" ry="9" fill="#000000"/>
+  <circle cx="48" cy="30" r="6" fill="#ff4400" opacity="0.95"/>
+  <circle cx="80" cy="30" r="6" fill="#ff4400" opacity="0.95"/>
+  <circle cx="48" cy="30" r="3" fill="#ffcc00"/>
+  <circle cx="80" cy="30" r="3" fill="#ffcc00"/>
+  <circle cx="48" cy="30" r="1.2" fill="#ffffff"/>
+  <circle cx="80" cy="30" r="1.2" fill="#ffffff"/>
+  <!-- Third eye — void element -->
+  <ellipse cx="64" cy="22" rx="6" ry="5" fill="#000000"/>
+  <circle cx="64" cy="22" r="3.5" fill="#aa00ff" opacity="0.9"/>
+  <circle cx="64" cy="22" r="1.5" fill="#ffffff" opacity="0.7"/>
+  <!-- Nose — angular demonic -->
+  <polygon points="58,40 64,46 70,40" fill="#1a0022"/>
+  <!-- Mouth — wide grin of contempt, baring massive teeth -->
+  <path d="M40 50 Q64 60 88 50" fill="#330011" stroke="#660011" stroke-width="1"/>
+  <rect x="44" y="50" width="6" height="9" rx="1.5" fill="#eeddcc"/>
+  <rect x="52" y="50" width="6" height="10" rx="1.5" fill="#eeddcc"/>
+  <rect x="60" y="51" width="8" height="11" rx="1.5" fill="#eeddcc"/>
+  <rect x="70" y="50" width="6" height="10" rx="1.5" fill="#eeddcc"/>
+  <rect x="78" y="50" width="6" height="9" rx="1.5" fill="#eeddcc"/>
+  <!-- Demonic gauntlet fists -->
+  <ellipse cx="14" cy="74" rx="12" ry="14" fill="#220033"/>
+  <ellipse cx="114" cy="74" rx="12" ry="14" fill="#220033"/>
+  <!-- Knuckle spikes -->
+  <polygon points="8,62 10,56 14,62" fill="#440044"/>
+  <polygon points="14,60 16,54 20,60" fill="#440044"/>
+  <polygon points="108,60 112,54 116,60" fill="#440044"/>
+  <polygon points="114,62 118,56 120,62" fill="#440044"/>
+  <!-- Legs — planted in hellfire -->
+  <rect x="32" y="106" width="22" height="18" rx="3" fill="#1a0022"/>
+  <rect x="74" y="106" width="22" height="18" rx="3" fill="#1a0022"/>
+  <!-- Hellfire under feet -->
+  <ellipse cx="43" cy="124" rx="16" ry="5" fill="#ff4400" opacity="0.5"/>
+  <ellipse cx="85" cy="124" rx="16" ry="5" fill="#ff4400" opacity="0.5"/>
+  <!-- Multi-element aura rings -->
+  <circle cx="64" cy="76" r="58" fill="none" stroke="#ff4400" stroke-width="1" opacity="0.15"/>
+  <circle cx="64" cy="76" r="52" fill="none" stroke="#0066ff" stroke-width="1" opacity="0.15"/>
+  <circle cx="64" cy="76" r="46" fill="none" stroke="#aa00ff" stroke-width="1.5" opacity="0.2"/>
+</svg>

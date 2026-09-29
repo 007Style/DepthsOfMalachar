@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Bat body — dark red-brown -->
+  <ellipse cx="32" cy="36" rx="12" ry="10" fill="#7a1a22"/>
+  <!-- Wings — large membrane wings swept back -->
+  <path d="M20 32 Q6 18 4 8 Q8 16 14 26 Q18 32 20 34 Z" fill="#660011" opacity="0.9"/>
+  <path d="M44 32 Q58 18 60 8 Q56 16 50 26 Q46 32 44 34 Z" fill="#660011" opacity="0.9"/>
+  <!-- Wing veins -->
+  <line x1="4" y1="8" x2="20" y2="34" stroke="#440008" stroke-width="1" opacity="0.7"/>
+  <line x1="8" y1="12" x2="20" y2="32" stroke="#440008" stroke-width="1" opacity="0.6"/>
+  <line x1="60" y1="8" x2="44" y2="34" stroke="#440008" stroke-width="1" opacity="0.7"/>
+  <line x1="56" y1="12" x2="44" y2="32" stroke="#440008" stroke-width="1" opacity="0.6"/>
+  <!-- Head with big ears -->
+  <ellipse cx="32" cy="24" rx="11" ry="9" fill="#8a2022"/>
+  <!-- Bat ears -->
+  <polygon points="22,18 18,8 26,16" fill="#7a1a22"/>
+  <polygon points="42,18 46,8 38,16" fill="#7a1a22"/>
+  <!-- Eyes — hungry glowing red -->
+  <ellipse cx="27" cy="23" rx="3.5" ry="3.5" fill="#110000"/>
+  <ellipse cx="37" cy="23" rx="3.5" ry="3.5" fill="#110000"/>
+  <circle cx="27" cy="23" r="2" fill="#ff2200" opacity="0.95"/>
+  <circle cx="37" cy="23" r="2" fill="#ff2200" opacity="0.95"/>
+  <circle cx="27" cy="23" r="0.8" fill="#ff8866"/>
+  <circle cx="37" cy="23" r="0.8" fill="#ff8866"/>
+  <!-- Snout -->
+  <ellipse cx="32" cy="28" rx="3.5" ry="2.5" fill="#7a1a22"/>
+  <!-- Vampire fangs -->
+  <rect x="29" y="29" width="2.5" height="5" rx="1" fill="#ffeeee"/>
+  <rect x="33" y="29" width="2.5" height="5" rx="1" fill="#ffeeee"/>
+  <!-- LifeSteal aura — red drain particles around -->
+  <circle cx="32" cy="36" r="18" fill="none" stroke="#cc0022" stroke-width="1" opacity="0.3" stroke-dasharray="3,5"/>
+  <!-- Legs / claws dangling -->
+  <path d="M28 44 Q26 50 24 54" stroke="#7a1a22" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M36 44 Q38 50 40 54" stroke="#7a1a22" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Aerial shadow below -->
+  <ellipse cx="32" cy="60" rx="12" ry="3" fill="#330011" opacity="0.2"/>
+</svg>

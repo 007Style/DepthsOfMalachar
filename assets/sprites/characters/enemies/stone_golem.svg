@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Massive stone body -->
+  <rect x="12" y="24" width="40" height="32" rx="6" fill="#7a7060"/>
+  <!-- Stone texture cracks -->
+  <line x1="20" y1="28" x2="24" y2="40" stroke="#5a5040" stroke-width="1.5" opacity="0.7"/>
+  <line x1="36" y1="30" x2="30" y2="48" stroke="#5a5040" stroke-width="1.5" opacity="0.7"/>
+  <line x1="44" y1="26" x2="40" y2="38" stroke="#5a5040" stroke-width="1.5" opacity="0.7"/>
+  <!-- Boulder head -->
+  <ellipse cx="32" cy="18" rx="16" ry="14" fill="#8a8070"/>
+  <!-- Deep set eyes — glowing amber -->
+  <ellipse cx="26" cy="17" rx="5" ry="4" fill="#333020"/>
+  <ellipse cx="38" cy="17" rx="5" ry="4" fill="#333020"/>
+  <circle cx="26" cy="17" r="2.5" fill="#ffaa00" opacity="0.9"/>
+  <circle cx="38" cy="17" r="2.5" fill="#ffaa00" opacity="0.9"/>
+  <circle cx="26" cy="17" r="1" fill="#ffdd44"/>
+  <circle cx="38" cy="17" r="1" fill="#ffdd44"/>
+  <!-- Flat rock nose -->
+  <rect x="29" y="21" width="6" height="4" rx="1" fill="#6a6050"/>
+  <!-- Scowling mouth slit -->
+  <rect x="22" y="27" width="20" height="3" rx="1" fill="#333020"/>
+  <!-- Rock shoulder pads -->
+  <ellipse cx="12" cy="28" rx="8" ry="7" fill="#7a7060"/>
+  <ellipse cx="52" cy="28" rx="8" ry="7" fill="#7a7060"/>
+  <!-- Rock fists -->
+  <ellipse cx="8" cy="42" rx="7" ry="7" fill="#8a8070"/>
+  <ellipse cx="56" cy="42" rx="7" ry="7" fill="#8a8070"/>
+  <!-- Cracks on fists -->
+  <line x1="5" y1="40" x2="11" y2="45" stroke="#5a5040" stroke-width="1.5" opacity="0.6"/>
+  <line x1="53" y1="40" x2="59" y2="45" stroke="#5a5040" stroke-width="1.5" opacity="0.6"/>
+  <!-- Legs — stone pillars -->
+  <rect x="16" y="54" width="12" height="10" rx="2" fill="#6a6050"/>
+  <rect x="36" y="54" width="12" height="10" rx="2" fill="#6a6050"/>
+  <!-- Shockwave ring (ground stomp indicator) -->
+  <ellipse cx="32" cy="60" rx="20" ry="4" fill="none" stroke="#ffaa00" stroke-width="1.5" opacity="0.5"/>
+</svg>

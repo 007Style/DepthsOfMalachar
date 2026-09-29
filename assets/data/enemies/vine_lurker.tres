@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/enemies/enemy_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "vine_lurker"
+enemy_name = "Vine Lurker"
+display_name = "Vine Lurker"
+base_hp = 85.0
+base_damage = 13.0
+move_speed = 55.0
+attack_range = 60.0
+attack_cooldown = 1.4
+element = 4
+coin_type = 0
+coin_drop_min = 2
+coin_drop_max = 6
+xp_reward = 24
+revive_crystal_drop_chance = 0.02
+has_weak_point = false
+weak_point_multiplier = 2.0
+can_evolve = true

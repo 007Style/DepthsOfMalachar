@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <radialGradient id="crystalGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#38bdf8" stop-opacity="0.9"/>
+      <stop offset="80%" stop-color="#0284c7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.9"/>
+    </radialGradient>
+    <radialGradient id="outerAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Aura -->
+  <circle cx="20" cy="20" r="18" fill="url(#outerAura)"/>
+  
+  <!-- Crystal Facets -->
+  <!-- Back/Dark facets -->
+  <polygon points="20,4 28,14 20,36 12,14" fill="#0369a1"/>
+  <!-- Front Left Facet -->
+  <polygon points="20,4 12,14 20,36" fill="#0284c7"/>
+  <!-- Front Right Facet -->
+  <polygon points="20,4 28,14 20,36" fill="#38bdf8"/>
+  <!-- Central Highlight Facet -->
+  <polygon points="20,6 25,14 20,32 15,14" fill="url(#crystalGlow)"/>
+
+  <!-- Magic Sparkles -->
+  <polygon points="20,1 21,5 25,6 21,7 20,11 19,7 15,6 19,5" fill="#ffffff"/>
+  <polygon points="31,24 32,27 35,28 32,29 31,32 30,29 27,28 30,27" fill="#bae6fd"/>
+</svg>

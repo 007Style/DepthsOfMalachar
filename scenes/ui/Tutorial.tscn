@@ -1,0 +1,180 @@
+[gd_scene load_steps=2 format=3 uid="uid://tutorial_ui"]
+
+[ext_resource type="Script" path="res://scripts/ui/tutorial.gd" id="1_tutorial"]
+
+[node name="Tutorial" type="CanvasLayer"]
+script = ExtResource("1_tutorial")
+
+[node name="Background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.04, 0.03, 0.07, 0.95)
+
+[node name="HeaderLabel" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 30.0
+offset_right = 460.0
+offset_bottom = 65.0
+theme_override_colors/font_color = Color(0.95, 0.85, 0.45, 1)
+theme_override_font_sizes/font_size = 20
+text = "HOW TO PLAY & SURVIVE"
+horizontal_alignment = 1
+
+[node name="TabContainer" type="TabContainer" parent="."]
+offset_left = 16.0
+offset_top = 75.0
+offset_right = 464.0
+offset_bottom = 770.0
+current_tab = 0
+
+[node name="Basics" type="TabBar" parent="TabContainer"]
+layout_mode = 2
+
+[node name="Scroll" type="ScrollContainer" parent="TabContainer/Basics"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = 12.0
+offset_right = -12.0
+offset_bottom = -12.0
+
+[node name="VBox" type="VBoxContainer" parent="TabContainer/Basics/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="Title1" type="Label" parent="TabContainer/Basics/Scroll/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.4, 0.9, 1, 1)
+theme_override_font_sizes/font_size = 16
+text = "🕹 Core Controls & Movement"
+
+[node name="Desc1" type="Label" parent="TabContainer/Basics/Scroll/VBox"]
+layout_mode = 2
+text = "• Virtual Joystick (Left Thumb): Touch and drag anywhere on the left side of your screen to move Ethari.
+• Attack Button (Right Bottom): Tap to execute primary weapon swings or projectile shots.
+• Abilities 1 & 2 (Right Mid): Trigger your class's unique special active abilities.
+• Ultimate Ability (Right Top): Devastating power that charges over time and when dealing damage.
+• Stance & Rage Buttons: Switch elemental/combat stances or activate Rage mode when the meter fills."
+autowrap_mode = 2
+
+[node name="HSeparator1" type="HSeparator" parent="TabContainer/Basics/Scroll/VBox"]
+layout_mode = 2
+
+[node name="Title2" type="Label" parent="TabContainer/Basics/Scroll/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.8, 0.3, 1)
+theme_override_font_sizes/font_size = 16
+text = "⚔ Combo & Rage Systems"
+
+[node name="Desc2" type="Label" parent="TabContainer/Basics/Scroll/VBox"]
+layout_mode = 2
+text = "• Combo Multiplier: Hitting enemies repeatedly without taking damage increases your combo multiplier (+10% per hit). Taking damage or waiting 3 seconds resets the combo!
+• Rage Meter: Dealing and taking damage fills your Rage bar. Once full, unleash Rage for +50% bonus damage and heightened speed for 8 seconds."
+autowrap_mode = 2
+
+[node name="Combat" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Scroll" type="ScrollContainer" parent="TabContainer/Combat"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = 12.0
+offset_right = -12.0
+offset_bottom = -12.0
+
+[node name="VBox" type="VBoxContainer" parent="TabContainer/Combat/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="Title1" type="Label" parent="TabContainer/Combat/Scroll/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.4, 0.4, 1)
+theme_override_font_sizes/font_size = 16
+text = "🛡 Dungeon Exploration & Rooms"
+
+[node name="Desc1" type="Label" parent="TabContainer/Combat/Scroll/VBox"]
+layout_mode = 2
+text = "• Combat Rooms: Clear all enemy waves to unlock the doors and reveal treasure chests.
+• Town / Safe Rooms: Rest to fully heal HP, prepare gear, or defend against occasional town raids.
+• Special Rooms: Discover Puzzle Rooms for bonus rewards, Curse Rooms for high-risk gambles, and Mirror Rooms to test yourself against your own reflection.
+• Boss Floors: Every 5 floors features mini-bosses, major dungeon lords, or ancient secret bosses!"
+autowrap_mode = 2
+
+[node name="HSeparator1" type="HSeparator" parent="TabContainer/Combat/Scroll/VBox"]
+layout_mode = 2
+
+[node name="Title2" type="Label" parent="TabContainer/Combat/Scroll/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3, 1, 0.6, 1)
+theme_override_font_sizes/font_size = 16
+text = "💎 Loot & Death Mechanics"
+
+[node name="Desc2" type="Label" parent="TabContainer/Combat/Scroll/VBox"]
+layout_mode = 2
+text = "• Coins: Copper, Silver, and Gold drop from slain foes to purchase upgrades and shop items.
+• Death & Legacy: When Ethari falls in battle, use Revive Crystals to continue immediately, or bank your meta-currencies to permanently strengthen future runs.
+• Keep Weapon: At the end of a run, choose a prized weapon to store in your Base Weapon Cabinet."
+autowrap_mode = 2
+
+[node name="Hub & Meta" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Scroll" type="ScrollContainer" parent="TabContainer/Hub & Meta"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = 12.0
+offset_right = -12.0
+offset_bottom = -12.0
+
+[node name="VBox" type="VBoxContainer" parent="TabContainer/Hub & Meta/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="Title1" type="Label" parent="TabContainer/Hub & Meta/Scroll/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.6, 1, 1)
+theme_override_font_sizes/font_size = 16
+text = "🏰 Base Hub Facilities"
+
+[node name="Desc1" type="Label" parent="TabContainer/Hub & Meta/Scroll/VBox"]
+layout_mode = 2
+text = "• Training Grounds: Upgrade permanent stats across all classes (Health, Base Damage, Crit).
+• Recruit Quarters: Hire fellow adventurers to fight alongside you in the dungeon.
+• Pet Fusion & Altar: Hatch, fuse, and bring loyal combat pets.
+• Forge & Base Shop: Craft materials and buy rare consumables.
+• Hall of Legends & Spy Network: Inspect past generation triumphs and reveal dungeon intel."
+autowrap_mode = 2
+
+[node name="HSeparator1" type="HSeparator" parent="TabContainer/Hub & Meta/Scroll/VBox"]
+layout_mode = 2
+
+[node name="Title2" type="Label" parent="TabContainer/Hub & Meta/Scroll/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.7, 0.2, 1)
+theme_override_font_sizes/font_size = 16
+text = "🏆 15 Playable Classes & Mastery"
+
+[node name="Desc2" type="Label" parent="TabContainer/Hub & Meta/Scroll/VBox"]
+layout_mode = 2
+text = "Master different archetypes from Warrior, Rogue, Mage, and Paladin to Necromancer and Voidblade. Leveling up class mastery unlocks passive divine traits and powerful new skills!"
+autowrap_mode = 2
+
+[node name="CloseButton" type="Button" parent="."]
+offset_left = 160.0
+offset_top = 785.0
+offset_right = 320.0
+offset_bottom = 830.0
+theme_override_colors/font_color = Color(0.9, 0.9, 0.9, 1)
+theme_override_font_sizes/font_size = 16
+text = "BACK"

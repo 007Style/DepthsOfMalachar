@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://halloflegends"]
+
+[node name="HallOfLegends" type="Node2D"]

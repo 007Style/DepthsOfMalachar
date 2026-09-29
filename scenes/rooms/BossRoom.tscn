@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://boss_room"]
+
+[ext_resource type="Script" path="res://scripts/dungeon/room.gd" id="1_script"]
+
+[sub_resource type="NavigationPolygon" id="NavPoly_1"]
+vertices = PackedVector2Array(-200, -200, 200, -200, 200, 200, -200, 200)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+
+[node name="BossRoom" type="Node2D"]
+script = ExtResource("1_script")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+
+[node name="EnemySpawner" type="Node2D" parent="."]
+
+[node name="LootSpawner" type="Node2D" parent="."]
+
+[node name="DoorNorth" type="Node2D" parent="."]
+position = Vector2(0, -200)
+
+[node name="DoorSouth" type="Node2D" parent="."]
+position = Vector2(0, 200)
+
+[node name="DoorEast" type="Node2D" parent="."]
+position = Vector2(200, 0)
+
+[node name="DoorWest" type="Node2D" parent="."]
+position = Vector2(-200, 0)
+
+[node name="FlashbackTrigger" type="Area2D" parent="."]
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+navigation_polygon = SubResource("NavPoly_1")

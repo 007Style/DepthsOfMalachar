@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+  <!-- MONK — Saffron/orange wraps, shaved head, beads, bare knuckles glowing with ki energy -->
+  <!-- Colour palette: warm saffron orange, deep tan skin, white ki glow, brown wraps -->
+  <ellipse cx="32" cy="47" rx="13" ry="5" fill="#100800" opacity="0.4"/>
+  <!-- Legs — wrapped -->
+  <rect x="23" y="42" width="9" height="14" rx="3" fill="#8a4010"/>
+  <rect x="32" y="42" width="9" height="14" rx="3" fill="#8a4010"/>
+  <!-- Leg wraps detail -->
+  <path d="M23,44 Q27.5,42 32,44" stroke="#c06018" stroke-width="1" fill="none"/>
+  <path d="M32,44 Q36.5,42 41,44" stroke="#c06018" stroke-width="1" fill="none"/>
+  <path d="M23,48 Q27.5,46 32,48" stroke="#c06018" stroke-width="1" fill="none"/>
+  <path d="M32,48 Q36.5,46 41,48" stroke="#c06018" stroke-width="1" fill="none"/>
+  <rect x="22" y="52" width="11" height="8" rx="2" fill="#6a3008"/>
+  <rect x="31" y="52" width="11" height="8" rx="2" fill="#6a3008"/>
+  <!-- Body — saffron robe/tunic -->
+  <rect x="20" y="22" width="24" height="22" rx="4" fill="#e08020"/>
+  <!-- Robe fold detail -->
+  <path d="M20,22 Q26,18 32,22 Q38,18 44,22" stroke="#c06010" stroke-width="1.5" fill="none"/>
+  <path d="M24,22 Q26,30 24,40" stroke="#c06010" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M40,22 Q38,30 40,40" stroke="#c06010" stroke-width="1" fill="none" opacity="0.5"/>
+  <!-- Prayer beads around neck/torso -->
+  <path d="M22,28 Q32,24 42,28" stroke="#3a1800" stroke-width="2" fill="none" stroke-dasharray="3,2"/>
+  <!-- Arms -->
+  <rect x="10" y="22" width="10" height="16" rx="4" fill="#e08020"/>
+  <rect x="44" y="22" width="10" height="16" rx="4" fill="#e08020"/>
+  <!-- Hand wraps -->
+  <rect x="9" y="34" width="11" height="6" rx="2" fill="#8a4010"/>
+  <rect x="44" y="34" width="11" height="6" rx="2" fill="#8a4010"/>
+  <!-- Knuckles glowing with white/gold ki -->
+  <ellipse cx="14" cy="42" rx="5" ry="4" fill="#c07010"/>
+  <ellipse cx="50" cy="42" rx="5" ry="4" fill="#c07010"/>
+  <!-- Ki energy glow -->
+  <ellipse cx="14" cy="42" rx="4" ry="3" fill="#fff0c0" opacity="0.8"/>
+  <ellipse cx="50" cy="42" rx="4" ry="3" fill="#fff0c0" opacity="0.8"/>
+  <ellipse cx="14" cy="42" rx="6" ry="5" fill="none" stroke="#ffe080" stroke-width="1.5" opacity="0.6"/>
+  <ellipse cx="50" cy="42" rx="6" ry="5" fill="none" stroke="#ffe080" stroke-width="1.5" opacity="0.6"/>
+  <!-- Ki aura emanating from fists -->
+  <path d="M8,40 Q5,36 7,32" stroke="#ffe080" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M56,40 Q59,36 57,32" stroke="#ffe080" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <!-- Shaved head -->
+  <ellipse cx="32" cy="17" rx="10" ry="10" fill="#c89060"/>
+  <!-- Smooth scalp highlight -->
+  <ellipse cx="30" cy="14" rx="5" ry="4" fill="#d8a070" opacity="0.5"/>
+  <!-- Eyes — calm, half-closed, dark brown -->
+  <ellipse cx="28" cy="17" rx="2.5" ry="1.8" fill="#200800"/>
+  <ellipse cx="36" cy="17" rx="2.5" ry="1.8" fill="#200800"/>
+  <ellipse cx="28" cy="17" rx="1.8" ry="1.2" fill="#603018"/>
+  <ellipse cx="36" cy="17" rx="1.8" ry="1.2" fill="#603018"/>
+  <!-- Half-lid lines (calm) -->
+  <path d="M25.5,15.5 Q28,15 30.5,15.5" stroke="#3a1800" stroke-width="1" fill="none"/>
+  <path d="M33.5,15.5 Q36,15 38.5,15.5" stroke="#3a1800" stroke-width="1" fill="none"/>
+  <!-- Third eye dot on forehead -->
+  <ellipse cx="32" cy="11" rx="2" ry="2" fill="#ffe080"/>
+  <ellipse cx="32" cy="11" rx="1" ry="1" fill="white"/>
+  <!-- Meditative expression — calm smile -->
+  <path d="M29,21 Q32,23 35,21" stroke="#a07040" stroke-width="1" fill="none"/>
+  <!-- Nose -->
+  <ellipse cx="32" cy="20" rx="1" ry="0.8" fill="#b08050"/>
+  <!-- Ear with prayer bead earring -->
+  <ellipse cx="22" cy="17" rx="2" ry="2.5" fill="#c08050"/>
+  <circle cx="22" cy="20" r="1.5" fill="#3a1800"/>
+</svg>

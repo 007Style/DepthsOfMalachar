@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+  <!-- KNIGHT — Immaculate full plate steel armour, blue cape, longsword, tower shield, noble crest -->
+  <!-- Colour palette: polished steel blue-grey, royal blue cape, silver, gold crest, stoic face -->
+  <ellipse cx="32" cy="46" rx="17" ry="6" fill="#080818" opacity="0.4"/>
+  <!-- Legs — full plate greaves -->
+  <rect x="21" y="42" width="10" height="14" rx="2" fill="#5868a0"/>
+  <rect x="33" y="42" width="10" height="14" rx="2" fill="#5868a0"/>
+  <!-- Greave highlight -->
+  <rect x="23" y="44" width="6" height="8" rx="1" fill="#7888c0"/>
+  <rect x="35" y="44" width="6" height="8" rx="1" fill="#7888c0"/>
+  <rect x="20" y="52" width="12" height="8" rx="2" fill="#404870"/>
+  <rect x="32" y="52" width="12" height="8" rx="2" fill="#404870"/>
+  <!-- Blue cape -->
+  <path d="M16,24 Q10,38 12,56 Q18,50 26,54 Q26,40 26,24 Z" fill="#1030a0" opacity="0.9"/>
+  <path d="M48,24 Q54,38 52,56 Q46,50 38,54 Q38,40 38,24 Z" fill="#1030a0" opacity="0.9"/>
+  <!-- Cape silver lining -->
+  <path d="M17,26 Q13,38 15,52 Q19,48 24,50 Q25,40 25,26 Z" fill="#2850c8" opacity="0.6"/>
+  <!-- Body — immaculate plate cuirass -->
+  <rect x="18" y="22" width="28" height="22" rx="4" fill="#6878b0"/>
+  <!-- Cuirass highlight panel -->
+  <rect x="21" y="24" width="11" height="14" rx="3" fill="#8898d0"/>
+  <rect x="32" y="24" width="10" height="14" rx="3" fill="#8898d0"/>
+  <!-- Royal blue enamelled centre plate -->
+  <rect x="27" y="24" width="10" height="18" rx="2" fill="#1840c0"/>
+  <!-- Gold fleur-de-lis crest on chest -->
+  <rect x="30.5" y="26" width="3" height="12" rx="1" fill="#f0d060"/>
+  <ellipse cx="32" cy="28" rx="4" ry="3" fill="#f0d060"/>
+  <ellipse cx="32" cy="27" rx="2.5" ry="2" fill="#ffe090"/>
+  <ellipse cx="28" cy="30" rx="2.5" ry="1.5" fill="#f0d060" transform="rotate(-30,28,30)"/>
+  <ellipse cx="36" cy="30" rx="2.5" ry="1.5" fill="#f0d060" transform="rotate(30,36,30)"/>
+  <!-- Gold trim on plate edges -->
+  <rect x="18" y="22" width="28" height="2" rx="1" fill="#f0d060"/>
+  <rect x="18" y="42" width="28" height="2" rx="1" fill="#f0d060"/>
+  <!-- Pauldrons — large, angular -->
+  <ellipse cx="12" cy="26" rx="9" ry="7" fill="#5868a0"/>
+  <ellipse cx="52" cy="26" rx="9" ry="7" fill="#5868a0"/>
+  <ellipse cx="12" cy="26" rx="6" ry="5" fill="#8898d0"/>
+  <ellipse cx="52" cy="26" rx="6" ry="5" fill="#8898d0"/>
+  <!-- Arms — full plate vambraces -->
+  <rect x="4" y="26" width="9" height="16" rx="3" fill="#6878b0"/>
+  <rect x="51" y="26" width="9" height="16" rx="3" fill="#6878b0"/>
+  <rect x="3" y="38" width="10" height="6" rx="2" fill="#404870"/>
+  <rect x="51" y="38" width="10" height="6" rx="2" fill="#404870"/>
+  <!-- Tower shield (left arm) -->
+  <path d="M2,22 Q0,34 2,46 Q6,52 10,46 Q14,34 12,22 Q8,18 2,22 Z" fill="#4858a0"/>
+  <path d="M3,24 Q2,34 3,44 Q6,50 9,44 Q12,34 11,24 Q8,21 3,24 Z" fill="#6878c8"/>
+  <!-- Shield royal emblem -->
+  <ellipse cx="7" cy="34" rx="4" ry="5" fill="#1030a0"/>
+  <rect x="5.5" y="30" width="2.5" height="8" rx="0.5" fill="#f0d060"/>
+  <rect x="3.5" y="34" width="6.5" height="2.5" rx="0.5" fill="#f0d060"/>
+  <!-- Longsword (right arm, raised) -->
+  <rect x="52" y="6" width="4" height="34" rx="2" fill="#d8dce8" transform="rotate(-15,54,23)"/>
+  <rect x="47" y="18" width="14" height="3" rx="1.5" fill="#f0d060" transform="rotate(-15,54,23)"/>
+  <rect x="54" y="6" width="2" height="8" rx="1" fill="#f0d060" transform="rotate(-15,54,23)"/>
+  <!-- Sword glow faint -->
+  <rect x="52" y="6" width="4" height="34" rx="2" fill="none" stroke="#c0d0ff" stroke-width="0.8" opacity="0.4" transform="rotate(-15,54,23)"/>
+  <!-- Great helmet — full visor, plumed -->
+  <rect x="20" y="8" width="24" height="18" rx="6" fill="#5868a0"/>
+  <rect x="22" y="10" width="20" height="14" rx="4" fill="#7888c8"/>
+  <!-- Visor T-shape -->
+  <rect x="22" y="16" width="20" height="5" rx="2" fill="#281840"/>
+  <rect x="29" y="12" width="6" height="12" rx="2" fill="#281840"/>
+  <!-- Eye slits with blue glow -->
+  <ellipse cx="27" cy="18" rx="3" ry="2" fill="#0028a0"/>
+  <ellipse cx="37" cy="18" rx="3" ry="2" fill="#0028a0"/>
+  <ellipse cx="27" cy="18" rx="2" ry="1.2" fill="#4080ff"/>
+  <ellipse cx="37" cy="18" rx="2" ry="1.2" fill="#4080ff"/>
+  <!-- Royal blue plume -->
+  <rect x="30" y="2" width="4" height="8" rx="2" fill="#2040d0"/>
+  <ellipse cx="32" cy="3" rx="3" ry="4" fill="#3050e0"/>
+  <!-- Gold helmet crown -->
+  <path d="M22,10 Q32,6 42,10" stroke="#f0d060" stroke-width="2" fill="none"/>
+  <circle cx="22" cy="10" r="2" fill="#f0d060"/>
+  <circle cx="32" cy="7" r="2.5" fill="#f0d060"/>
+  <circle cx="42" cy="10" r="2" fill="#f0d060"/>
+</svg>

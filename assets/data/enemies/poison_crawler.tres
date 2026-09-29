@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/enemies/enemy_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "poison_crawler"
+enemy_name = "Poison Crawler"
+display_name = "Poison Crawler"
+base_hp = 45.0
+base_damage = 9.0
+move_speed = 70.0
+attack_range = 32.0
+attack_cooldown = 1.0
+element = 5
+coin_type = 0
+coin_drop_min = 1
+coin_drop_max = 4
+xp_reward = 16
+revive_crystal_drop_chance = 0.01
+has_weak_point = true
+weak_point_multiplier = 2.0
+can_evolve = true

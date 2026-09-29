@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="ClassData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/classes/class_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/player/stats.gd" id="2"]
+
+[sub_resource type="Resource" id="ElementalistStats"]
+script = ExtResource("2")
+max_hp = 92.0
+current_hp = 92.0
+base_damage = 20.0
+attack_speed = 0.95
+move_speed = 145.0
+crit_chance = 0.10
+crit_multiplier = 2.5
+defence = 0.0
+dodge_chance = 0.05
+lifesteal = 0.0
+xp_multiplier = 1.2
+coin_multiplier = 1.0
+
+[resource]
+script = ExtResource("1")
+class_type = 9
+class_name_text = "Elementalist"
+base_stats = SubResource("ElementalistStats")
+passive_description = "Elemental Mastery: Elemental reactions deal 50% bonus damage."
+ability_1_name = "Elemental Cycle"
+ability_1_description = "Cycle through fire, ice, and lightning — each spell applies a different element."
+ability_2_name = "Elemental Shield"
+ability_2_description = "Surround yourself with an elemental barrier absorbing 3 hits."
+ultimate_name = "Primal Storm"
+ultimate_description = "Unleash all three elements simultaneously in a screen-wide blast."
+ultimate_cooldown = 35.0
+has_stances = true
+stance_a_name = "Fire Stance"
+stance_b_name = "Ice Stance"
+stance_a_description = "Fire damage, burn effects, offensive focus."
+stance_b_description = "Ice damage, slow effects, control focus."
+is_locked = false

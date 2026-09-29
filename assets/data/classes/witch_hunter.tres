@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ClassData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/classes/class_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/player/stats.gd" id="2"]
+
+[sub_resource type="Resource" id="WitchHunterStats"]
+script = ExtResource("2")
+max_hp = 112.0
+current_hp = 112.0
+base_damage = 17.0
+attack_speed = 1.2
+move_speed = 160.0
+crit_chance = 0.15
+crit_multiplier = 2.8
+defence = 2.0
+dodge_chance = 0.08
+lifesteal = 0.0
+xp_multiplier = 1.1
+coin_multiplier = 1.2
+
+[resource]
+script = ExtResource("1")
+class_type = 13
+class_name_text = "Witch Hunter"
+base_stats = SubResource("WitchHunterStats")
+passive_description = "Blessed Weapons: Deal 30% bonus damage to magical enemies."
+ability_1_name = "Silver Bolt"
+ability_1_description = "Fire a holy bolt that pierces and slows."
+ability_2_name = "Ward"
+ability_2_description = "Place a ward that reflects enemy projectiles."
+ultimate_name = "Purge"
+ultimate_description = "Instantly kill all cursed or poisoned enemies in the room."
+ultimate_cooldown = 28.0
+has_stances = false
+is_locked = false

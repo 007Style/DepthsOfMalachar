@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/enemies/enemy_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "cursed_knight"
+enemy_name = "Cursed Knight"
+display_name = "Cursed Knight"
+base_hp = 110.0
+base_damage = 22.0
+move_speed = 75.0
+attack_range = 44.0
+attack_cooldown = 1.1
+element = 6
+coin_type = 1
+coin_drop_min = 3
+coin_drop_max = 9
+xp_reward = 38
+revive_crystal_drop_chance = 0.03
+has_weak_point = true
+weak_point_multiplier = 2.5
+can_evolve = true

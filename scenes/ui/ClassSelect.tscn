@@ -1,0 +1,98 @@
+[gd_scene load_steps=2 format=3 uid="uid://class_select"]
+
+[ext_resource type="Script" path="res://scripts/ui/class_select.gd" id="1_class_select"]
+
+[node name="ClassSelect" type="CanvasLayer"]
+script = ExtResource("1_class_select")
+
+; ── Dark backdrop ──────────────────────────────────────────────────────────
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 480.0
+offset_bottom = 854.0
+color = Color(0.04, 0.03, 0.08, 1.0)
+
+; ── Title ──────────────────────────────────────────────────────────────────
+[node name="TitleLabel" type="Label" parent="Background"]
+offset_left = 0.0
+offset_top = 12.0
+offset_right = 480.0
+offset_bottom = 46.0
+text = "Choose Your Class"
+horizontal_alignment = 1
+add_theme_font_size_override = 22
+add_theme_color_override/font_color = Color(0.9, 0.85, 0.5, 1.0)
+
+; ── Subtitle / lore line ───────────────────────────────────────────────────
+[node name="SubtitleLabel" type="Label" parent="Background"]
+offset_left = 0.0
+offset_top = 48.0
+offset_right = 480.0
+offset_bottom = 66.0
+text = "Ethari's spirit reshapes to face the Depths..."
+horizontal_alignment = 1
+add_theme_font_size_override = 11
+add_theme_color_override/font_color = Color(0.6, 0.55, 0.7, 1.0)
+
+; ── Scrollable class grid ──────────────────────────────────────────────────
+[node name="ScrollContainer" type="ScrollContainer" parent="Background"]
+offset_left = 8.0
+offset_top = 72.0
+offset_right = 472.0
+offset_bottom = 620.0
+
+[node name="ClassGrid" type="GridContainer" parent="Background/ScrollContainer"]
+columns = 3
+add_theme_constant_override/h_separation = 8
+add_theme_constant_override/v_separation = 8
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+; ── Selected class name display ───────────────────────────────────────────
+[node name="SelectedLabel" type="Label" parent="Background"]
+offset_left = 0.0
+offset_top = 626.0
+offset_right = 480.0
+offset_bottom = 646.0
+text = "Selected: Warrior"
+horizontal_alignment = 1
+add_theme_font_size_override = 13
+add_theme_color_override/font_color = Color(1.0, 0.9, 0.5, 1.0)
+
+; ── Class description box ─────────────────────────────────────────────────
+[node name="DescBG" type="ColorRect" parent="Background"]
+offset_left = 10.0
+offset_top = 650.0
+offset_right = 470.0
+offset_bottom = 730.0
+color = Color(0.08, 0.06, 0.14, 1.0)
+
+[node name="DescLabel" type="Label" parent="Background"]
+offset_left = 16.0
+offset_top = 654.0
+offset_right = 464.0
+offset_bottom = 726.0
+text = "Select a class to see its description."
+horizontal_alignment = 0
+autowrap_mode = 3
+add_theme_font_size_override = 12
+add_theme_color_override/font_color = Color(0.85, 0.82, 0.9, 1.0)
+
+; ── Confirm button ────────────────────────────────────────────────────────
+[node name="ConfirmButton" type="Button" parent="Background"]
+offset_left = 120.0
+offset_top = 740.0
+offset_right = 360.0
+offset_bottom = 784.0
+text = "Enter the Depths"
+add_theme_font_size_override = 16
+add_theme_color_override/font_color = Color(1.0, 0.9, 0.3, 1.0)
+
+; ── Back button ───────────────────────────────────────────────────────────
+[node name="BackButton" type="Button" parent="Background"]
+offset_left = 10.0
+offset_top = 800.0
+offset_right = 180.0
+offset_bottom = 836.0
+text = "← Back to Base"
+add_theme_font_size_override = 13
+add_theme_color_override/font_color = Color(0.7, 0.7, 0.7, 1.0)

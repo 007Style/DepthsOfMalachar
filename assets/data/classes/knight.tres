@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ClassData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/classes/class_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/player/stats.gd" id="2"]
+
+[sub_resource type="Resource" id="KnightStats"]
+script = ExtResource("2")
+max_hp = 160.0
+current_hp = 160.0
+base_damage = 13.0
+attack_speed = 0.95
+move_speed = 135.0
+crit_chance = 0.05
+crit_multiplier = 2.0
+defence = 10.0
+dodge_chance = 0.0
+lifesteal = 0.0
+xp_multiplier = 1.0
+coin_multiplier = 1.0
+
+[resource]
+script = ExtResource("1")
+class_type = 14
+class_name_text = "Knight"
+base_stats = SubResource("KnightStats")
+passive_description = "Stalwart: Gain a shield equal to 10% max HP at the start of each room."
+ability_1_name = "Shield Slam"
+ability_1_description = "Slam your shield, dealing damage and pushing enemies away."
+ability_2_name = "Fortify"
+ability_2_description = "Reduce incoming damage by 60% for 4 seconds."
+ultimate_name = "Fortress Stance"
+ultimate_description = "Become immovable and block all damage for 6 seconds, then retaliate with AoE."
+ultimate_cooldown = 30.0
+has_stances = false
+is_locked = false

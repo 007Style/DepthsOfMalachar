@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ClassData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/classes/class_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/player/stats.gd" id="2"]
+
+[sub_resource type="Resource" id="BerserkerStats"]
+script = ExtResource("2")
+max_hp = 130.0
+current_hp = 130.0
+base_damage = 18.0
+attack_speed = 1.2
+move_speed = 155.0
+crit_chance = 0.12
+crit_multiplier = 2.5
+defence = 3.0
+dodge_chance = 0.0
+lifesteal = 0.0
+xp_multiplier = 1.0
+coin_multiplier = 1.0
+
+[resource]
+script = ExtResource("1")
+class_type = 8
+class_name_text = "Berserker"
+base_stats = SubResource("BerserkerStats")
+passive_description = "Blood Frenzy: Damage increases as HP drops (up to 60% bonus at 10% HP)."
+ability_1_name = "Reckless Charge"
+ability_1_description = "Charge forward, dealing damage and knocking enemies back."
+ability_2_name = "Battle Howl"
+ability_2_description = "Taunt all enemies and gain a temporary HP shield."
+ultimate_name = "Whirlwind"
+ultimate_description = "Spin dealing damage to all nearby enemies for 5 seconds."
+ultimate_cooldown = 24.0
+has_stances = false
+is_locked = false

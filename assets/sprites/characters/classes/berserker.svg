@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+  <!-- BERSERKER — Bare arms, fur mantle, tribal war paint, huge axe, wild red hair, rage veins -->
+  <!-- Colour palette: blood red, raw iron, wolf-fur grey, fiery orange, war-paint blue -->
+  <ellipse cx="32" cy="47" rx="17" ry="6" fill="#200400" opacity="0.5"/>
+  <!-- Legs — rough leather/fur -->
+  <rect x="21" y="42" width="10" height="14" rx="3" fill="#5a3010"/>
+  <rect x="33" y="42" width="10" height="14" rx="3" fill="#5a3010"/>
+  <!-- Fur leg wraps -->
+  <path d="M21,44 Q26,42 31,44 Q26,46 21,44 Z" fill="#808070" opacity="0.7"/>
+  <path d="M33,44 Q38,42 43,44 Q38,46 33,44 Z" fill="#808070" opacity="0.7"/>
+  <rect x="20" y="52" width="12" height="8" rx="2" fill="#3a1808"/>
+  <rect x="32" y="52" width="12" height="8" rx="2" fill="#3a1808"/>
+  <!-- Body — bare chest (muscular, massive) -->
+  <rect x="18" y="22" width="28" height="22" rx="5" fill="#c8906a"/>
+  <!-- Muscle definition -->
+  <path d="M22,28 Q28,26 32,28" stroke="#b07858" stroke-width="1.5" fill="none"/>
+  <path d="M32,28 Q36,26 42,28" stroke="#b07858" stroke-width="1.5" fill="none"/>
+  <path d="M20,34 Q26,32 32,34 Q38,32 44,34" stroke="#b07858" stroke-width="1.5" fill="none"/>
+  <!-- War paint — blue tribal marks on chest -->
+  <path d="M24,26 Q28,22 32,26 Q28,30 24,26 Z" fill="#2040c0" opacity="0.7"/>
+  <path d="M32,26 Q36,22 40,26 Q36,30 32,26 Z" fill="#2040c0" opacity="0.7"/>
+  <path d="M24,32 Q32,30 40,32" stroke="#2040c0" stroke-width="1.5" fill="none" opacity="0.8"/>
+  <!-- Rage veins glowing red (visible at low HP) -->
+  <path d="M20,26 Q16,30 18,36" stroke="#ff2020" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M44,26 Q48,30 46,36" stroke="#ff2020" stroke-width="1" fill="none" opacity="0.6"/>
+  <!-- Fur mantle/cloak at shoulders -->
+  <path d="M12,18 Q14,28 18,34 Q20,26 22,22 Q18,20 12,18 Z" fill="#808070"/>
+  <path d="M52,18 Q50,28 46,34 Q44,26 42,22 Q46,20 52,18 Z" fill="#808070"/>
+  <path d="M14,20 Q16,26 18,30 Q20,24 22,22 Q18,21 14,20 Z" fill="#a0a090"/>
+  <path d="M50,20 Q48,26 46,30 Q44,24 42,22 Q46,21 50,20 Z" fill="#a0a090"/>
+  <!-- Arms — huge, bare, veined -->
+  <rect x="5" y="22" width="14" height="18" rx="5" fill="#c8906a"/>
+  <rect x="45" y="22" width="14" height="18" rx="5" fill="#c8906a"/>
+  <!-- Vein detail on arms -->
+  <path d="M7,26 Q10,24 12,28 Q10,30 7,28" stroke="#ff2020" stroke-width="0.8" fill="none" opacity="0.5"/>
+  <path d="M52,26 Q55,24 57,28 Q55,30 52,28" stroke="#ff2020" stroke-width="0.8" fill="none" opacity="0.5"/>
+  <!-- Iron wristbands -->
+  <rect x="4" y="36" width="14" height="5" rx="2" fill="#606060"/>
+  <rect x="46" y="36" width="14" height="5" rx="2" fill="#606060"/>
+  <!-- Massive double-headed axe (right arm, raised high) -->
+  <rect x="50" y="8" width="4" height="44" rx="2" fill="#7a5020" transform="rotate(-10,52,30)"/>
+  <!-- Axe head left blade -->
+  <path d="M46,8 Q40,2 44,14 Q48,10 46,8 Z" fill="#808090" transform="rotate(-10,52,30)"/>
+  <!-- Axe head right blade -->
+  <path d="M56,8 Q62,2 58,14 Q54,10 56,8 Z" fill="#808090" transform="rotate(-10,52,30)"/>
+  <!-- Blood on axe blade -->
+  <path d="M44,12 Q42,14 43,16" stroke="#c02020" stroke-width="1.5" fill="none" transform="rotate(-10,52,30)" opacity="0.7"/>
+  <!-- Wild red hair — massive, unkempt -->
+  <path d="M18,14 Q14,4 20,2 Q26,0 28,6 Q24,8 22,14" fill="#c03010"/>
+  <path d="M20,10 Q16,6 18,2 Q22,2 22,8" fill="#e04020"/>
+  <path d="M46,14 Q50,4 44,2 Q38,0 36,6 Q40,8 42,14" fill="#c03010"/>
+  <path d="M44,10 Q48,6 46,2 Q42,2 42,8" fill="#e04020"/>
+  <path d="M28,6 Q32,2 36,6 Q34,10 32,10 Q30,10 28,6 Z" fill="#c03010"/>
+  <!-- Face — massive jaw, battle-scarred, fierce orange eyes -->
+  <ellipse cx="32" cy="18" rx="10" ry="10" fill="#c08060"/>
+  <!-- War paint on face (blue diagonal stripes) -->
+  <rect x="22" y="15" width="8" height="2.5" rx="1" fill="#2040c0" opacity="0.8" transform="rotate(-20,26,16)"/>
+  <rect x="34" y="15" width="8" height="2.5" rx="1" fill="#2040c0" opacity="0.8" transform="rotate(20,38,16)"/>
+  <!-- Eyes — blazing orange, wide -->
+  <ellipse cx="27.5" cy="17" rx="3" ry="2.5" fill="#201000"/>
+  <ellipse cx="36.5" cy="17" rx="3" ry="2.5" fill="#201000"/>
+  <ellipse cx="27.5" cy="17" rx="2.2" ry="1.8" fill="#e04000"/>
+  <ellipse cx="36.5" cy="17" rx="2.2" ry="1.8" fill="#e04000"/>
+  <ellipse cx="27.5" cy="16.5" rx="1" ry="1" fill="#ff8020"/>
+  <ellipse cx="36.5" cy="16.5" rx="1" ry="1" fill="#ff8020"/>
+  <!-- Thick battle brows furrowed hard -->
+  <rect x="24" y="13" width="8" height="2.5" rx="1" fill="#502010" transform="rotate(-5,28,14)"/>
+  <rect x="32" y="13" width="8" height="2.5" rx="1" fill="#502010" transform="rotate(5,36,14)"/>
+  <!-- Broken nose, wide -->
+  <path d="M30,19.5 Q32,21 34,19.5" stroke="#a06040" stroke-width="1.2" fill="none"/>
+  <!-- Open roaring mouth -->
+  <path d="M26,22 Q32,26 38,22 Q38,24 32,25 Q26,24 26,22 Z" fill="#601010"/>
+  <!-- Teeth -->
+  <rect x="27" y="22" width="3" height="2" rx="0.5" fill="#e0d8c8"/>
+  <rect x="31" y="22" width="3" height="2" rx="0.5" fill="#e0d8c8"/>
+  <rect x="35" y="22" width="3" height="2" rx="0.5" fill="#e0d8c8"/>
+  <!-- Battle scar across face -->
+  <path d="M24,16 Q28,19 30,22" stroke="#d09070" stroke-width="1.5" fill="none" opacity="0.7"/>
+</svg>

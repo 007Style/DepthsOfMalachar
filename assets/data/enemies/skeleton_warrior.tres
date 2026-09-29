@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/enemies/enemy_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "skeleton_warrior"
+enemy_name = "Skeleton Warrior"
+display_name = "Skeleton Warrior"
+base_hp = 55.0
+base_damage = 10.0
+move_speed = 85.0
+attack_range = 38.0
+attack_cooldown = 1.1
+element = 0
+coin_type = 0
+coin_drop_min = 1
+coin_drop_max = 5
+xp_reward = 18
+revive_crystal_drop_chance = 0.01
+has_weak_point = false
+weak_point_multiplier = 2.0
+can_evolve = true

@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://baseshop"]
+
+[node name="BaseShop" type="Node2D"]

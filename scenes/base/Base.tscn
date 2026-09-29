@@ -1,0 +1,444 @@
+[gd_scene load_steps=6 format=3 uid="uid://base_scene"]
+
+[ext_resource type="Script" path="res://scripts/base/base.gd" id="1_base"]
+
+[sub_resource type="RectangleShape2D" id="RectShape_Building"]
+size = Vector2(96, 80)
+
+[sub_resource type="RectangleShape2D" id="RectShape_SmallBuilding"]
+size = Vector2(96, 60)
+
+[sub_resource type="RectangleShape2D" id="RectShape_Hall"]
+size = Vector2(280, 80)
+
+[sub_resource type="RectangleShape2D" id="RectShape_Entrance"]
+size = Vector2(152, 100)
+
+[node name="Base" type="Node2D"]
+script = ExtResource("1_base")
+
+; ── Atmospheric background ─────────────────────────────────────────────────
+[node name="Sky" type="ColorRect" parent="."]
+offset_right = 480.0
+offset_bottom = 854.0
+color = Color(0.05, 0.04, 0.10, 1.0)
+
+[node name="GroundLayer" type="ColorRect" parent="."]
+offset_top = 500.0
+offset_right = 480.0
+offset_bottom = 854.0
+color = Color(0.12, 0.10, 0.08, 1.0)
+
+; Atmospheric light behind base
+[node name="AmbientGlow" type="ColorRect" parent="."]
+offset_left = 80.0
+offset_top = 100.0
+offset_right = 400.0
+offset_bottom = 600.0
+color = Color(0.15, 0.10, 0.25, 0.3)
+
+; ── Canvas lighting ────────────────────────────────────────────────────────
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.6, 0.57, 0.54, 1.0)
+
+; ── Title banner ───────────────────────────────────────────────────────────
+[node name="BaseTitleBanner" type="Label" parent="."]
+offset_left = 0.0
+offset_top = 12.0
+offset_right = 480.0
+offset_bottom = 44.0
+text = "⚔ The Depths of Malachar — Base Camp ⚔"
+horizontal_alignment = 1
+vertical_alignment = 1
+add_theme_font_size_override = 14
+add_theme_color_override/font_color = Color(0.9, 0.85, 0.6, 1.0)
+
+; ── Audio / Timer ──────────────────────────────────────────────────────────
+[node name="AmbientAudio" type="AudioStreamPlayer" parent="."]
+autoplay = true
+volume_db = -6.0
+
+[node name="FestivalTimer" type="Timer" parent="."]
+wait_time = 30.0
+one_shot = true
+
+; ── Notification label (shown by EventBus) ─────────────────────────────────
+[node name="NotificationLabel" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 800.0
+offset_right = 460.0
+offset_bottom = 840.0
+text = ""
+horizontal_alignment = 1
+add_theme_font_size_override = 13
+add_theme_color_override/font_color = Color(1.0, 1.0, 0.6, 1.0)
+
+; ── Player character spawn ──────────────────────────────────────────────────
+[node name="PlayerCharacter" type="CharacterBody2D" parent="."]
+position = Vector2(240, 640)
+
+[node name="PlayerSprite" type="ColorRect" parent="PlayerCharacter"]
+offset_left = -16.0
+offset_top = -24.0
+offset_right = 16.0
+offset_bottom = 8.0
+color = Color(0.4, 0.7, 1.0, 1.0)
+
+[node name="PlayerCollision" type="CollisionShape2D" parent="PlayerCharacter"]
+
+; ── Buildings group ─────────────────────────────────────────────────────────
+[node name="Buildings" type="Node2D" parent="."]
+
+; ─── ALTAR OF AELION (top-left) ────────────────────────────────────────────
+[node name="AltarBG" type="ColorRect" parent="Buildings"]
+offset_left = 24.0
+offset_top = 80.0
+offset_right = 120.0
+offset_bottom = 160.0
+color = Color(0.3, 0.15, 0.45, 1.0)
+
+[node name="AltarLabel" type="Label" parent="Buildings"]
+offset_left = 24.0
+offset_top = 162.0
+offset_right = 120.0
+offset_bottom = 180.0
+text = "⚗ Altar"
+horizontal_alignment = 1
+add_theme_font_size_override = 11
+add_theme_color_override/font_color = Color(0.7, 0.9, 1.0, 1.0)
+
+[node name="AltarZone" type="Area2D" parent="Buildings"]
+position = Vector2(72, 120)
+
+[node name="AltarCollision" type="CollisionShape2D" parent="Buildings/AltarZone"]
+shape = SubResource("RectShape_Building")
+
+; ─── WEAPON CABINET (top-centre-left) ──────────────────────────────────────
+[node name="WeaponCabinetBG" type="ColorRect" parent="Buildings"]
+offset_left = 140.0
+offset_top = 80.0
+offset_right = 236.0
+offset_bottom = 160.0
+color = Color(0.35, 0.25, 0.10, 1.0)
+
+[node name="WeaponCabinetLabel" type="Label" parent="Buildings"]
+offset_left = 140.0
+offset_top = 162.0
+offset_right = 236.0
+offset_bottom = 180.0
+text = "🗡 Cabinet"
+horizontal_alignment = 1
+add_theme_font_size_override = 11
+add_theme_color_override/font_color = Color(1.0, 0.85, 0.4, 1.0)
+
+[node name="WeaponCabinetZone" type="Area2D" parent="Buildings"]
+position = Vector2(188, 120)
+
+[node name="WeaponCabinetCollision" type="CollisionShape2D" parent="Buildings/WeaponCabinetZone"]
+shape = SubResource("RectShape_Building")
+
+; ─── RECRUIT QUARTERS (top-centre-right) ───────────────────────────────────
+[node name="RecruitBG" type="ColorRect" parent="Buildings"]
+offset_left = 254.0
+offset_top = 80.0
+offset_right = 350.0
+offset_bottom = 160.0
+color = Color(0.15, 0.25, 0.40, 1.0)
+
+[node name="RecruitLabel" type="Label" parent="Buildings"]
+offset_left = 254.0
+offset_top = 162.0
+offset_right = 350.0
+offset_bottom = 180.0
+text = "🏠 Quarters"
+horizontal_alignment = 1
+add_theme_font_size_override = 11
+add_theme_color_override/font_color = Color(0.6, 0.8, 1.0, 1.0)
+
+[node name="RecruitQuartersZone" type="Area2D" parent="Buildings"]
+position = Vector2(302, 120)
+
+[node name="RecruitQuartersCollision" type="CollisionShape2D" parent="Buildings/RecruitQuartersZone"]
+shape = SubResource("RectShape_Building")
+
+; ─── SHOP (top-right) ──────────────────────────────────────────────────────
+[node name="ShopBG" type="ColorRect" parent="Buildings"]
+offset_left = 368.0
+offset_top = 80.0
+offset_right = 456.0
+offset_bottom = 160.0
+color = Color(0.35, 0.30, 0.05, 1.0)
+
+[node name="ShopLabel" type="Label" parent="Buildings"]
+offset_left = 368.0
+offset_top = 162.0
+offset_right = 456.0
+offset_bottom = 180.0
+text = "💰 Shop"
+horizontal_alignment = 1
+add_theme_font_size_override = 11
+add_theme_color_override/font_color = Color(1.0, 0.9, 0.3, 1.0)
+
+[node name="ShopZone" type="Area2D" parent="Buildings"]
+position = Vector2(412, 120)
+
+[node name="ShopCollision" type="CollisionShape2D" parent="Buildings/ShopZone"]
+shape = SubResource("RectShape_Building")
+
+; ─── FORGE (second row left) ───────────────────────────────────────────────
+[node name="ForgeBG" type="ColorRect" parent="Buildings"]
+offset_left = 24.0
+offset_top = 220.0
+offset_right = 120.0
+offset_bottom = 300.0
+color = Color(0.40, 0.15, 0.05, 1.0)
+
+[node name="ForgeLabel" type="Label" parent="Buildings"]
+offset_left = 24.0
+offset_top = 302.0
+offset_right = 120.0
+offset_bottom = 320.0
+text = "🔥 Forge"
+horizontal_alignment = 1
+add_theme_font_size_override = 11
+add_theme_color_override/font_color = Color(1.0, 0.6, 0.2, 1.0)
+
+[node name="ForgeZone" type="Area2D" parent="Buildings"]
+position = Vector2(72, 260)
+
+[node name="ForgeCollision" type="CollisionShape2D" parent="Buildings/ForgeZone"]
+shape = SubResource("RectShape_Building")
+
+; ─── LIBRARY ───────────────────────────────────────────────────────────────
+[node name="LibraryBG" type="ColorRect" parent="Buildings"]
+offset_left = 140.0
+offset_top = 220.0
+offset_right = 236.0
+offset_bottom = 300.0
+color = Color(0.10, 0.20, 0.35, 1.0)
+
+[node name="LibraryLabel" type="Label" parent="Buildings"]
+offset_left = 140.0
+offset_top = 302.0
+offset_right = 236.0
+offset_bottom = 320.0
+text = "📚 Library"
+horizontal_alignment = 1
+add_theme_font_size_override = 11
+add_theme_color_override/font_color = Color(0.5, 0.8, 1.0, 1.0)
+
+[node name="LibraryZone" type="Area2D" parent="Buildings"]
+position = Vector2(188, 260)
+
+[node name="LibraryCollision" type="CollisionShape2D" parent="Buildings/LibraryZone"]
+shape = SubResource("RectShape_Building")
+
+; ─── TAVERN ────────────────────────────────────────────────────────────────
+[node name="TavernBG" type="ColorRect" parent="Buildings"]
+offset_left = 254.0
+offset_top = 220.0
+offset_right = 350.0
+offset_bottom = 300.0
+color = Color(0.30, 0.15, 0.05, 1.0)
+
+[node name="TavernLabel" type="Label" parent="Buildings"]
+offset_left = 254.0
+offset_top = 302.0
+offset_right = 350.0
+offset_bottom = 320.0
+text = "🍺 Tavern"
+horizontal_alignment = 1
+add_theme_font_size_override = 11
+add_theme_color_override/font_color = Color(0.9, 0.7, 0.4, 1.0)
+
+[node name="TavernZone" type="Area2D" parent="Buildings"]
+position = Vector2(302, 260)
+
+[node name="TavernCollision" type="CollisionShape2D" parent="Buildings/TavernZone"]
+shape = SubResource("RectShape_Building")
+
+; ─── TRAINING GROUNDS ──────────────────────────────────────────────────────
+[node name="TrainingBG" type="ColorRect" parent="Buildings"]
+offset_left = 368.0
+offset_top = 220.0
+offset_right = 456.0
+offset_bottom = 300.0
+color = Color(0.20, 0.20, 0.20, 1.0)
+
+[node name="TrainingLabel" type="Label" parent="Buildings"]
+offset_left = 368.0
+offset_top = 302.0
+offset_right = 456.0
+offset_bottom = 320.0
+text = "🥊 Training"
+horizontal_alignment = 1
+add_theme_font_size_override = 11
+add_theme_color_override/font_color = Color(0.8, 0.8, 0.6, 1.0)
+
+[node name="TrainingGroundsZone" type="Area2D" parent="Buildings"]
+position = Vector2(412, 260)
+
+[node name="TrainingCollision" type="CollisionShape2D" parent="Buildings/TrainingGroundsZone"]
+shape = SubResource("RectShape_Building")
+
+; ─── GARDENS ───────────────────────────────────────────────────────────────
+[node name="GardensBG" type="ColorRect" parent="Buildings"]
+offset_left = 24.0
+offset_top = 360.0
+offset_right = 120.0
+offset_bottom = 420.0
+color = Color(0.10, 0.30, 0.10, 1.0)
+
+[node name="GardensLabel" type="Label" parent="Buildings"]
+offset_left = 24.0
+offset_top = 422.0
+offset_right = 120.0
+offset_bottom = 440.0
+text = "🌿 Gardens"
+horizontal_alignment = 1
+add_theme_font_size_override = 11
+add_theme_color_override/font_color = Color(0.4, 1.0, 0.4, 1.0)
+
+[node name="GardensZone" type="Area2D" parent="Buildings"]
+position = Vector2(72, 390)
+
+[node name="GardensCollision" type="CollisionShape2D" parent="Buildings/GardensZone"]
+shape = SubResource("RectShape_SmallBuilding")
+
+; ─── DUNGEON MAP ───────────────────────────────────────────────────────────
+[node name="DungeonMapBG" type="ColorRect" parent="Buildings"]
+offset_left = 140.0
+offset_top = 360.0
+offset_right = 236.0
+offset_bottom = 420.0
+color = Color(0.10, 0.12, 0.28, 1.0)
+
+[node name="DungeonMapLabel" type="Label" parent="Buildings"]
+offset_left = 140.0
+offset_top = 422.0
+offset_right = 236.0
+offset_bottom = 440.0
+text = "🗺 Map"
+horizontal_alignment = 1
+add_theme_font_size_override = 11
+add_theme_color_override/font_color = Color(0.6, 0.7, 1.0, 1.0)
+
+[node name="DungeonMapZone" type="Area2D" parent="Buildings"]
+position = Vector2(188, 390)
+
+[node name="DungeonMapCollision" type="CollisionShape2D" parent="Buildings/DungeonMapZone"]
+shape = SubResource("RectShape_SmallBuilding")
+
+; ─── SPY NETWORK ───────────────────────────────────────────────────────────
+[node name="SpyNetworkBG" type="ColorRect" parent="Buildings"]
+offset_left = 254.0
+offset_top = 360.0
+offset_right = 350.0
+offset_bottom = 420.0
+color = Color(0.12, 0.18, 0.12, 1.0)
+
+[node name="SpyNetworkLabel" type="Label" parent="Buildings"]
+offset_left = 254.0
+offset_top = 422.0
+offset_right = 350.0
+offset_bottom = 440.0
+text = "🕵 Spies"
+horizontal_alignment = 1
+add_theme_font_size_override = 11
+add_theme_color_override/font_color = Color(0.5, 0.9, 0.5, 1.0)
+
+[node name="SpyNetworkZone" type="Area2D" parent="Buildings"]
+position = Vector2(302, 390)
+
+[node name="SpyNetworkCollision" type="CollisionShape2D" parent="Buildings/SpyNetworkZone"]
+shape = SubResource("RectShape_SmallBuilding")
+
+; ─── MONUMENT ──────────────────────────────────────────────────────────────
+[node name="MonumentBG" type="ColorRect" parent="Buildings"]
+offset_left = 368.0
+offset_top = 360.0
+offset_right = 456.0
+offset_bottom = 420.0
+color = Color(0.25, 0.22, 0.10, 1.0)
+
+[node name="MonumentLabel" type="Label" parent="Buildings"]
+offset_left = 368.0
+offset_top = 422.0
+offset_right = 456.0
+offset_bottom = 440.0
+text = "🏛 Monument"
+horizontal_alignment = 1
+add_theme_font_size_override = 11
+add_theme_color_override/font_color = Color(1.0, 0.9, 0.5, 1.0)
+
+[node name="MonumentZone" type="Area2D" parent="Buildings"]
+position = Vector2(412, 390)
+
+[node name="MonumentCollision" type="CollisionShape2D" parent="Buildings/MonumentZone"]
+shape = SubResource("RectShape_SmallBuilding")
+
+; ─── HALL OF LEGENDS (wide, bottom-centre) ─────────────────────────────────
+[node name="HallBG" type="ColorRect" parent="Buildings"]
+offset_left = 100.0
+offset_top = 460.0
+offset_right = 380.0
+offset_bottom = 540.0
+color = Color(0.22, 0.18, 0.08, 1.0)
+
+[node name="HallLabel" type="Label" parent="Buildings"]
+offset_left = 100.0
+offset_top = 542.0
+offset_right = 380.0
+offset_bottom = 560.0
+text = "🏆 Hall of Legends"
+horizontal_alignment = 1
+add_theme_font_size_override = 12
+add_theme_color_override/font_color = Color(1.0, 0.85, 0.0, 1.0)
+
+[node name="HallOfLegendsZone" type="Area2D" parent="Buildings"]
+position = Vector2(240, 500)
+
+[node name="HallOfLegendsCollision" type="CollisionShape2D" parent="Buildings/HallOfLegendsZone"]
+shape = SubResource("RectShape_Hall")
+
+; ── Dungeon Entrance (glowing gateway at the bottom) ───────────────────────
+[node name="DungeonEntranceBG" type="ColorRect" parent="."]
+offset_left = 164.0
+offset_top = 680.0
+offset_right = 316.0
+offset_bottom = 780.0
+color = Color(0.05, 0.02, 0.15, 1.0)
+
+[node name="DungeonEntranceBorder" type="ColorRect" parent="."]
+offset_left = 158.0
+offset_top = 674.0
+offset_right = 322.0
+offset_bottom = 786.0
+color = Color(0.5, 0.0, 1.0, 0.7)
+
+[node name="DungeonEntranceLabel" type="Label" parent="."]
+offset_left = 140.0
+offset_top = 790.0
+offset_right = 340.0
+offset_bottom = 812.0
+text = "▼ ENTER THE DEPTHS ▼"
+horizontal_alignment = 1
+add_theme_font_size_override = 13
+add_theme_color_override/font_color = Color(0.8, 0.3, 1.0, 1.0)
+
+[node name="DungeonEntrance" type="Area2D" parent="."]
+position = Vector2(240, 730)
+
+[node name="DungeonEntranceCollision" type="CollisionShape2D" parent="DungeonEntrance"]
+shape = SubResource("RectShape_Entrance")
+
+; ── Interaction hint ────────────────────────────────────────────────────────
+[node name="HintLabel" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 50.0
+offset_right = 460.0
+offset_bottom = 72.0
+text = "Walk into a building to interact"
+horizontal_alignment = 1
+add_theme_font_size_override = 11
+add_theme_color_override/font_color = Color(0.6, 0.6, 0.6, 0.8)

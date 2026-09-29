@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ClassData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/classes/class_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/player/stats.gd" id="2"]
+
+[sub_resource type="Resource" id="PaladinStats"]
+script = ExtResource("2")
+max_hp = 170.0
+current_hp = 170.0
+base_damage = 12.0
+attack_speed = 0.9
+move_speed = 130.0
+crit_chance = 0.05
+crit_multiplier = 2.0
+defence = 8.0
+dodge_chance = 0.0
+lifesteal = 0.05
+xp_multiplier = 1.0
+coin_multiplier = 1.0
+
+[resource]
+script = ExtResource("1")
+class_type = 4
+class_name_text = "Paladin"
+base_stats = SubResource("PaladinStats")
+passive_description = "Divine Shield: Once per floor, survive lethal damage with 1 HP."
+ability_1_name = "Holy Strike"
+ability_1_description = "Deal light damage and heal for 20% of damage dealt."
+ability_2_name = "Consecrate"
+ability_2_description = "Create a holy area that damages undead and heals allies."
+ultimate_name = "Divine Judgment"
+ultimate_description = "Strike all enemies in range with holy lightning."
+ultimate_cooldown = 28.0
+has_stances = false
+is_locked = false

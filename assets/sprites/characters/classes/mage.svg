@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+  <!-- MAGE — Deep blue robes, tall pointed hat, glowing staff, arcane runes -->
+  <!-- Colour palette: midnight blue, arcane purple, electric cyan accent -->
+  <ellipse cx="32" cy="48" rx="14" ry="5" fill="#000820" opacity="0.4"/>
+  <!-- Robe base — flowing, wide at bottom -->
+  <path d="M20,28 Q14,42 12,58 Q22,54 32,56 Q42,54 52,58 Q50,42 44,28 Z" fill="#0a1a60"/>
+  <!-- Robe highlight -->
+  <path d="M22,30 Q18,42 17,54 Q24,51 32,53 Q28,42 26,30 Z" fill="#1030a0"/>
+  <!-- Arcane rune pattern on robe -->
+  <text x="28" y="44" font-size="6" fill="#4060ff" opacity="0.8" font-family="serif">✦</text>
+  <text x="22" y="52" font-size="5" fill="#4060ff" opacity="0.6" font-family="serif">◈</text>
+  <text x="34" y="52" font-size="5" fill="#4060ff" opacity="0.6" font-family="serif">◈</text>
+  <!-- Belt with arcane buckle -->
+  <rect x="22" y="34" width="20" height="3" rx="1.5" fill="#2040c0"/>
+  <ellipse cx="32" cy="35.5" rx="3" ry="3" fill="#0080ff"/>
+  <ellipse cx="32" cy="35.5" rx="2" ry="2" fill="#80c0ff"/>
+  <!-- Body/torso under robe -->
+  <rect x="22" y="22" width="20" height="14" rx="3" fill="#0a1a60"/>
+  <!-- Collar/mantle -->
+  <path d="M20,22 Q32,18 44,22 Q42,28 32,26 Q22,28 20,22 Z" fill="#1838b0"/>
+  <!-- Arms with sleeves -->
+  <rect x="10" y="24" width="10" height="16" rx="4" fill="#0a1a60"/>
+  <rect x="44" y="24" width="10" height="16" rx="4" fill="#0a1a60"/>
+  <!-- Glowing hands -->
+  <ellipse cx="15" cy="42" rx="4" ry="4" fill="#0040c0"/>
+  <ellipse cx="49" cy="42" rx="4" ry="4" fill="#0040c0"/>
+  <ellipse cx="15" cy="42" rx="2.5" ry="2.5" fill="#40a0ff"/>
+  <ellipse cx="49" cy="42" rx="2.5" ry="2.5" fill="#40a0ff"/>
+  <!-- Staff (right hand, tall) -->
+  <rect x="48" y="4" width="3" height="52" rx="1.5" fill="#603820"/>
+  <!-- Staff orb -->
+  <ellipse cx="49.5" cy="8" rx="6" ry="6" fill="#0020a0"/>
+  <ellipse cx="49.5" cy="8" rx="4" ry="4" fill="#2060e0"/>
+  <ellipse cx="49.5" cy="8" rx="2.5" ry="2.5" fill="#80c0ff"/>
+  <ellipse cx="49.5" cy="8" rx="1.2" ry="1.2" fill="white"/>
+  <!-- Staff glow aura -->
+  <ellipse cx="49.5" cy="8" rx="8" ry="8" fill="none" stroke="#4080ff" stroke-width="1" opacity="0.6"/>
+  <!-- Pointed hat -->
+  <path d="M32,2 L48,20 L16,20 Z" fill="#0a1240"/>
+  <path d="M32,2 L44,20 L20,20 Z" fill="#142060"/>
+  <!-- Hat brim -->
+  <ellipse cx="32" cy="20" rx="16" ry="4" fill="#0a1240"/>
+  <ellipse cx="32" cy="20" rx="14" ry="3" fill="#1a2870"/>
+  <!-- Hat star -->
+  <text x="27" y="14" font-size="8" fill="#40a0ff" opacity="0.9" font-family="serif">★</text>
+  <!-- Face -->
+  <ellipse cx="32" cy="22" rx="9" ry="8" fill="#e8d8c8"/>
+  <!-- Eyes — glowing cyan -->
+  <ellipse cx="28" cy="21" rx="2.5" ry="2.5" fill="#001050"/>
+  <ellipse cx="36" cy="21" rx="2.5" ry="2.5" fill="#001050"/>
+  <ellipse cx="28" cy="21" rx="1.5" ry="1.5" fill="#00d0ff"/>
+  <ellipse cx="36" cy="21" rx="1.5" ry="1.5" fill="#00d0ff"/>
+  <ellipse cx="28" cy="20.5" rx="0.8" ry="0.8" fill="white"/>
+  <ellipse cx="36" cy="20.5" rx="0.8" ry="0.8" fill="white"/>
+  <!-- Eyebrows — raised, wise -->
+  <path d="M25.5,18.5 Q28,17.5 30.5,18.5" stroke="#706040" stroke-width="1" fill="none"/>
+  <path d="M33.5,18.5 Q36,17.5 38.5,18.5" stroke="#706040" stroke-width="1" fill="none"/>
+  <!-- Beard/goatee for elder mage look -->
+  <path d="M29,25.5 Q32,27.5 35,25.5 Q34,28 32,29 Q30,28 29,25.5 Z" fill="#a09070"/>
+  <!-- Nose -->
+  <ellipse cx="32" cy="23" rx="1" ry="0.8" fill="#c0a888"/>
+  <!-- Mouth — wise slight smile -->
+  <path d="M29,25 Q32,26.5 35,25" stroke="#908060" stroke-width="0.8" fill="none"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+  <!-- Attack button icon — sword slash -->
+  <circle cx="32" cy="32" r="30" fill="#1a0808" stroke="#c02020" stroke-width="2"/>
+  <!-- Sword blade -->
+  <rect x="28" y="10" width="8" height="34" rx="4" fill="#c8d0e0" transform="rotate(45,32,32)"/>
+  <!-- Sword guard -->
+  <rect x="20" y="30" width="24" height="5" rx="2.5" fill="#c8a030" transform="rotate(45,32,32)"/>
+  <!-- Slash trail -->
+  <path d="M14,14 Q32,28 50,50" stroke="#ff4020" stroke-width="3" fill="none" opacity="0.6" stroke-linecap="round"/>
+  <!-- Spark at tip -->
+  <circle cx="48" cy="48" r="4" fill="#ffd060" opacity="0.8"/>
+</svg>

@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://upgrade_tree"]
+
+[ext_resource type="Script" path="res://scripts/ui/upgrade_tree.gd" id="1_upgrade"]
+
+[node name="UpgradeTree" type="CanvasLayer"]
+script = ExtResource("1_upgrade")
+
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 480.0
+offset_bottom = 854.0
+color = Color(0.08, 0.06, 0.12, 0.97)
+
+[node name="PointsPanel" type="HBoxContainer" parent="."]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 470.0
+offset_bottom = 46.0
+
+[node name="PointsLabel" type="Label" parent="PointsPanel"]
+text = "Upgrade Points: 0"
+size_flags_horizontal = 3
+
+[node name="CloseButton" type="Button" parent="."]
+offset_left = 380.0
+offset_top = 10.0
+offset_right = 470.0
+offset_bottom = 46.0
+text = "Close"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+offset_left = 0.0
+offset_top = 52.0
+offset_right = 480.0
+offset_bottom = 854.0
+
+[node name="TreeContainer" type="Control" parent="ScrollContainer"]
+custom_minimum_size = Vector2(900, 800)

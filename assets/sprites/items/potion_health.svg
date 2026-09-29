@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <radialGradient id="potionGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f87171" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#dc2626" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#7f1d1d" stop-opacity="1"/>
+    </radialGradient>
+  </defs>
+  <!-- Cork -->
+  <rect x="15" y="4" width="6" height="4" rx="1" fill="#a16207" stroke="#451a03" stroke-width="0.8"/>
+  <!-- Bottle Neck -->
+  <rect x="14" y="8" width="8" height="5" fill="#e2e8f0" stroke="#475569" stroke-width="1" opacity="0.8"/>
+  <!-- Bottle Body Glass -->
+  <circle cx="18" cy="22" r="11" fill="#e2e8f0" stroke="#475569" stroke-width="1.5" opacity="0.85"/>
+  <!-- Liquid -->
+  <circle cx="18" cy="23" r="9.5" fill="url(#potionGlow)"/>
+  <!-- Bubble highlights -->
+  <circle cx="15" cy="20" r="2" fill="#ffffff" opacity="0.8"/>
+  <circle cx="21" cy="25" r="1.2" fill="#ffffff" opacity="0.6"/>
+  <circle cx="17" cy="26" r="0.8" fill="#ffffff" opacity="0.6"/>
+</svg>

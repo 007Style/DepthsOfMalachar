@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Vine body / tendrils -->
+  <path d="M22 30 Q14 38 16 52 Q20 60 32 60 Q44 60 48 52 Q50 38 42 30 Z" fill="#2d6a20"/>
+  <!-- Vine wrappings on body -->
+  <path d="M18 38 Q32 34 46 38" fill="none" stroke="#1a4a10" stroke-width="2" opacity="0.8"/>
+  <path d="M16 46 Q32 42 48 46" fill="none" stroke="#1a4a10" stroke-width="2" opacity="0.8"/>
+  <!-- Flower/pod head -->
+  <ellipse cx="32" cy="20" rx="13" ry="12" fill="#3d7a2a"/>
+  <!-- Petal crown -->
+  <ellipse cx="32" cy="10" rx="4" ry="6" fill="#88cc44"/>
+  <ellipse cx="22" cy="14" rx="4" ry="6" fill="#88cc44" transform="rotate(-40,22,14)"/>
+  <ellipse cx="42" cy="14" rx="4" ry="6" fill="#88cc44" transform="rotate(40,42,14)"/>
+  <ellipse cx="19" cy="22" rx="3" ry="5" fill="#66aa33" transform="rotate(-70,19,22)"/>
+  <ellipse cx="45" cy="22" rx="3" ry="5" fill="#66aa33" transform="rotate(70,45,22)"/>
+  <!-- Eyes — eerie plant glow yellow-green -->
+  <ellipse cx="27" cy="20" rx="3.5" ry="3.5" fill="#112200"/>
+  <ellipse cx="37" cy="20" rx="3.5" ry="3.5" fill="#112200"/>
+  <circle cx="27" cy="20" r="2" fill="#aaff00" opacity="0.9"/>
+  <circle cx="37" cy="20" r="2" fill="#aaff00" opacity="0.9"/>
+  <!-- Mouth — thorn-lined slit -->
+  <path d="M26 26 Q32 30 38 26" fill="none" stroke="#1a4a10" stroke-width="2"/>
+  <line x1="28" y1="26" x2="28" y2="29" stroke="#1a4a10" stroke-width="1.5"/>
+  <line x1="32" y1="27" x2="32" y2="30" stroke="#1a4a10" stroke-width="1.5"/>
+  <line x1="36" y1="26" x2="36" y2="29" stroke="#1a4a10" stroke-width="1.5"/>
+  <!-- Vine arm roots -->
+  <path d="M22 38 Q10 36 6 44 Q8 50 14 48" fill="none" stroke="#2d6a20" stroke-width="4" stroke-linecap="round"/>
+  <path d="M42 38 Q54 36 58 44 Q56 50 50 48" fill="none" stroke="#2d6a20" stroke-width="4" stroke-linecap="round"/>
+  <!-- Root tendril hands -->
+  <circle cx="6" cy="44" r="4" fill="#2d6a20"/>
+  <circle cx="58" cy="44" r="4" fill="#2d6a20"/>
+</svg>

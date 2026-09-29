@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="bladeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#93c5fd"/>
+      <stop offset="80%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </radialGradient>
+    <linearGradient id="goldHilt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#854d0e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Aura Background Circle -->
+  <circle cx="32" cy="32" r="28" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <circle cx="32" cy="32" r="25" fill="#1e293b" opacity="0.6"/>
+
+  <!-- Blade Tip to Pommel (Diagonal) -->
+  <!-- Blade Edge Glow -->
+  <polygon points="50,14 47,11 18,40 21,43" fill="#60a5fa" opacity="0.7"/>
+  <!-- Main Blade -->
+  <polygon points="54,10 44,12 18,38 23,43 49,17" fill="url(#bladeGlow)"/>
+  <!-- Central Ridge -->
+  <line x1="54" y1="10" x2="22" y2="42" stroke="#ffffff" stroke-width="1.2"/>
+
+  <!-- Crossguard -->
+  <polygon points="17,35 29,47 26,50 14,38" fill="url(#goldHilt)" stroke="#713f12" stroke-width="0.8"/>
+  <circle cx="21.5" cy="42.5" r="2.5" fill="#ef4444"/>
+
+  <!-- Grip -->
+  <polygon points="17,45 12,50 14,52 19,47" fill="#78350f" stroke="#451a03" stroke-width="0.8"/>
+
+  <!-- Pommel -->
+  <circle cx="11" cy="53" r="3.5" fill="url(#goldHilt)" stroke="#713f12" stroke-width="0.8"/>
+  <circle cx="11" cy="53" r="1.5" fill="#38bdf8"/>
+
+  <!-- Sparkle Flare -->
+  <polygon points="54,10 52,5 57,8 60,6 56,11 58,15 53,13 50,15" fill="#ffffff"/>
+</svg>

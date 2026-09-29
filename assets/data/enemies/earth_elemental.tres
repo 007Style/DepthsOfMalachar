@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/enemies/enemy_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "earth_elemental"
+enemy_name = "Earth Elemental"
+display_name = "Earth Elemental"
+base_hp = 140.0
+base_damage = 20.0
+move_speed = 55.0
+attack_range = 50.0
+attack_cooldown = 1.6
+element = 4
+coin_type = 1
+coin_drop_min = 3
+coin_drop_max = 8
+xp_reward = 40
+revive_crystal_drop_chance = 0.03
+has_weak_point = true
+weak_point_multiplier = 3.0
+can_evolve = true

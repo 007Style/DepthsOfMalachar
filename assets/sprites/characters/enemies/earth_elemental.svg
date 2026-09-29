@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Earth body — chunky rock elemental -->
+  <rect x="14" y="26" width="36" height="30" rx="8" fill="#7a6040"/>
+  <!-- Rock texture layers -->
+  <path d="M14 36 Q22 32 32 34 Q42 32 50 36" fill="none" stroke="#5a4020" stroke-width="2" opacity="0.6"/>
+  <path d="M14 46 Q22 42 32 44 Q42 42 50 46" fill="none" stroke="#5a4020" stroke-width="2" opacity="0.6"/>
+  <!-- Head — jagged rock -->
+  <polygon points="32,8 44,16 42,26 22,26 20,16" fill="#8a7050"/>
+  <!-- Earth cracks glow orange (underground heat) -->
+  <line x1="28" y1="12" x2="26" y2="22" stroke="#ff8800" stroke-width="1.5" opacity="0.7"/>
+  <line x1="34" y1="10" x2="36" y2="20" stroke="#ff8800" stroke-width="1.5" opacity="0.7"/>
+  <!-- Eyes — glowing magma orange -->
+  <ellipse cx="27" cy="20" rx="4" ry="4" fill="#2a1a00"/>
+  <ellipse cx="37" cy="20" rx="4" ry="4" fill="#2a1a00"/>
+  <circle cx="27" cy="20" r="2.2" fill="#ff8800" opacity="0.95"/>
+  <circle cx="37" cy="20" r="2.2" fill="#ff8800" opacity="0.95"/>
+  <circle cx="27" cy="20" r="1" fill="#ffcc00"/>
+  <circle cx="37" cy="20" r="1" fill="#ffcc00"/>
+  <!-- Mouth slit — lava glow -->
+  <path d="M24 24 Q32 26 40 24" fill="none" stroke="#ff6600" stroke-width="2" stroke-linecap="round"/>
+  <!-- Rock fist arms -->
+  <ellipse cx="10" cy="38" rx="8" ry="9" fill="#7a6040"/>
+  <ellipse cx="54" cy="38" rx="8" ry="9" fill="#7a6040"/>
+  <!-- Crack details on fists -->
+  <line x1="7" y1="36" x2="13" y2="42" stroke="#5a4020" stroke-width="1.5" opacity="0.6"/>
+  <line x1="51" y1="36" x2="57" y2="42" stroke="#5a4020" stroke-width="1.5" opacity="0.6"/>
+  <!-- Legs — stone blocks -->
+  <rect x="17" y="54" width="11" height="10" rx="2" fill="#6a5030"/>
+  <rect x="36" y="54" width="11" height="10" rx="2" fill="#6a5030"/>
+  <!-- Underground burrowing indicator (dirt cloud) -->
+  <ellipse cx="32" cy="62" rx="16" ry="4" fill="#8a6040" opacity="0.4"/>
+</svg>

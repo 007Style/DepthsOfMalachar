@@ -1,0 +1,234 @@
+[gd_scene load_steps=3 format=3 uid="uid://save_slot_screen"]
+
+[ext_resource type="Script" path="res://scripts/ui/save_slot_screen.gd" id="1_slot_screen"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_Card"]
+bg_color = Color(0.1, 0.08, 0.16, 0.85)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.35, 0.25, 0.5, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="SaveSlotScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_slot_screen")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.04, 0.02, 0.07, 0.98)
+
+[node name="HeaderLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -180.0
+offset_top = 45.0
+offset_right = 180.0
+offset_bottom = 85.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.95, 0.85, 0.45, 1)
+theme_override_font_sizes/font_size = 22
+text = "SELECT SAVE PROFILE"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -210.0
+offset_top = -240.0
+offset_right = 210.0
+offset_bottom = 260.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 18
+alignment = 1
+
+; ─── SLOT 1 ────────────────────────────────────────────────────────────────
+[node name="Slot1" type="PanelContainer" parent="VBoxContainer"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 130)
+theme_override_styles/panel = SubResource("StyleBoxFlat_Card")
+
+[node name="Margin" type="MarginContainer" parent="VBoxContainer/Slot1"]
+layout_mode = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 12
+
+[node name="HBox" type="HBoxContainer" parent="VBoxContainer/Slot1/Margin"]
+layout_mode = 2
+
+[node name="InfoVBox" type="VBoxContainer" parent="VBoxContainer/Slot1/Margin/HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer/Slot1/Margin/HBox/InfoVBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "SLOT 1"
+
+[node name="DescLabel" type="Label" parent="VBoxContainer/Slot1/Margin/HBox/InfoVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.7, 0.8, 1)
+theme_override_font_sizes/font_size = 11
+text = "Progress info"
+
+[node name="ActionVBox" type="VBoxContainer" parent="VBoxContainer/Slot1/Margin/HBox"]
+layout_mode = 2
+alignment = 1
+
+[node name="PlayButton" type="Button" parent="VBoxContainer/Slot1/Margin/HBox/ActionVBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(100, 38)
+theme_override_font_sizes/font_size = 13
+text = "CONTINUE"
+
+[node name="DeleteButton" type="Button" parent="VBoxContainer/Slot1/Margin/HBox/ActionVBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(100, 28)
+theme_override_colors/font_color = Color(0.8, 0.3, 0.3, 1)
+theme_override_font_sizes/font_size = 11
+text = "DELETE"
+
+; ─── SLOT 2 ────────────────────────────────────────────────────────────────
+[node name="Slot2" type="PanelContainer" parent="VBoxContainer"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 130)
+theme_override_styles/panel = SubResource("StyleBoxFlat_Card")
+
+[node name="Margin" type="MarginContainer" parent="VBoxContainer/Slot2"]
+layout_mode = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 12
+
+[node name="HBox" type="HBoxContainer" parent="VBoxContainer/Slot2/Margin"]
+layout_mode = 2
+
+[node name="InfoVBox" type="VBoxContainer" parent="VBoxContainer/Slot2/Margin/HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer/Slot2/Margin/HBox/InfoVBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "SLOT 2"
+
+[node name="DescLabel" type="Label" parent="VBoxContainer/Slot2/Margin/HBox/InfoVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.7, 0.8, 1)
+theme_override_font_sizes/font_size = 11
+text = "Progress info"
+
+[node name="ActionVBox" type="VBoxContainer" parent="VBoxContainer/Slot2/Margin/HBox"]
+layout_mode = 2
+alignment = 1
+
+[node name="PlayButton" type="Button" parent="VBoxContainer/Slot2/Margin/HBox/ActionVBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(100, 38)
+theme_override_font_sizes/font_size = 13
+text = "CONTINUE"
+
+[node name="DeleteButton" type="Button" parent="VBoxContainer/Slot2/Margin/HBox/ActionVBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(100, 28)
+theme_override_colors/font_color = Color(0.8, 0.3, 0.3, 1)
+theme_override_font_sizes/font_size = 11
+text = "DELETE"
+
+; ─── SLOT 3 ────────────────────────────────────────────────────────────────
+[node name="Slot3" type="PanelContainer" parent="VBoxContainer"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 130)
+theme_override_styles/panel = SubResource("StyleBoxFlat_Card")
+
+[node name="Margin" type="MarginContainer" parent="VBoxContainer/Slot3"]
+layout_mode = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 12
+
+[node name="HBox" type="HBoxContainer" parent="VBoxContainer/Slot3/Margin"]
+layout_mode = 2
+
+[node name="InfoVBox" type="VBoxContainer" parent="VBoxContainer/Slot3/Margin/HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer/Slot3/Margin/HBox/InfoVBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "SLOT 3"
+
+[node name="DescLabel" type="Label" parent="VBoxContainer/Slot3/Margin/HBox/InfoVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.7, 0.8, 1)
+theme_override_font_sizes/font_size = 11
+text = "Progress info"
+
+[node name="ActionVBox" type="VBoxContainer" parent="VBoxContainer/Slot3/Margin/HBox"]
+layout_mode = 2
+alignment = 1
+
+[node name="PlayButton" type="Button" parent="VBoxContainer/Slot3/Margin/HBox/ActionVBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(100, 38)
+theme_override_font_sizes/font_size = 13
+text = "CONTINUE"
+
+[node name="DeleteButton" type="Button" parent="VBoxContainer/Slot3/Margin/HBox/ActionVBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(100, 28)
+theme_override_colors/font_color = Color(0.8, 0.3, 0.3, 1)
+theme_override_font_sizes/font_size = 11
+text = "DELETE"
+
+; ─── BOTTOM CONTROLS ───────────────────────────────────────────────────────
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -80.0
+offset_top = -70.0
+offset_right = 80.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 15
+text = "BACK"
+
+[node name="ConfirmationDialog" type="ConfirmationDialog" parent="."]
+title = "Delete Save Slot"
+size = Vector2i(320, 120)
+ok_button_text = "Delete"
+cancel_button_text = "Cancel"

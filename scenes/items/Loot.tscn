@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://loot_pickup"]
+
+[ext_resource type="Script" path="res://scripts/items/loot_pickup.gd" id="1_loot"]
+[ext_resource type="Texture2D" path="res://assets/sprites/items/chest.svg" id="2_chest_tex"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1"]
+radius = 14.0
+
+[node name="Loot" type="Area2D"]
+script = ExtResource("1_loot")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_chest_tex")
+scale = Vector2(0.65, 0.65)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_1")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -30.0
+offset_top = 14.0
+offset_right = 30.0
+offset_bottom = 28.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Glow" type="PointLight2D" parent="."]
+color = Color(1, 0.9, 0.3, 1)
+energy = 1.0
+texture_scale = 0.3

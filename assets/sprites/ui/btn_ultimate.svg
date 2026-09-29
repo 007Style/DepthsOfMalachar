@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+  <!-- Ultimate button — blazing star burst -->
+  <circle cx="32" cy="32" r="30" fill="#200800" stroke="#f0c020" stroke-width="2.5"/>
+  <!-- Star rays -->
+  <polygon points="32,6 35,26 54,20 38,32 54,44 35,38 32,58 29,38 10,44 26,32 10,20 29,26" fill="#f0c020"/>
+  <polygon points="32,12 34.5,26 50,22 38,32 50,42 34.5,38 32,52 29.5,38 14,42 26,32 14,22 29.5,26" fill="#ffe080"/>
+  <ellipse cx="32" cy="32" rx="7" ry="7" fill="#fff8d0"/>
+  <ellipse cx="32" cy="32" rx="4" ry="4" fill="white"/>
+  <!-- Outer glow ring -->
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#f0c020" stroke-width="1" opacity="0.4"/>
+</svg>

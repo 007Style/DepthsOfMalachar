@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Bird body — large raptor -->
+  <ellipse cx="32" cy="36" rx="14" ry="12" fill="#8899bb"/>
+  <!-- Wing span — fully extended flying pose -->
+  <path d="M18 32 Q4 20 2 10 Q6 14 10 22 Q14 30 18 34 Z" fill="#7788aa"/>
+  <path d="M46 32 Q60 20 62 10 Q58 14 54 22 Q50 30 46 34 Z" fill="#7788aa"/>
+  <!-- Wing feather details left -->
+  <line x1="10" y1="22" x2="18" y2="34" stroke="#6677aa" stroke-width="1.5" opacity="0.7"/>
+  <line x1="6" y1="16" x2="16" y2="32" stroke="#6677aa" stroke-width="1" opacity="0.6"/>
+  <!-- Wing feather details right -->
+  <line x1="54" y1="22" x2="46" y2="34" stroke="#6677aa" stroke-width="1.5" opacity="0.7"/>
+  <line x1="58" y1="16" x2="48" y2="32" stroke="#6677aa" stroke-width="1" opacity="0.6"/>
+  <!-- Head -->
+  <ellipse cx="32" cy="22" rx="10" ry="9" fill="#99aabb"/>
+  <!-- Sharp fierce eyes — yellow electric -->
+  <ellipse cx="27" cy="21" rx="3.5" ry="3.5" fill="#1a1a22"/>
+  <ellipse cx="37" cy="21" rx="3.5" ry="3.5" fill="#1a1a22"/>
+  <circle cx="27" cy="21" r="2" fill="#ffee00" opacity="0.95"/>
+  <circle cx="37" cy="21" r="2" fill="#ffee00" opacity="0.95"/>
+  <circle cx="27" cy="21" r="0.8" fill="#ffffff"/>
+  <circle cx="37" cy="21" r="0.8" fill="#ffffff"/>
+  <!-- Sharp beak -->
+  <polygon points="32,25 28,29 36,29" fill="#ccbb44"/>
+  <!-- Head crest feathers -->
+  <path d="M28 14 Q32 8 36 14" fill="none" stroke="#aabbcc" stroke-width="2"/>
+  <!-- Talons -->
+  <rect x="24" y="46" width="8" height="5" rx="1" fill="#7788aa"/>
+  <rect x="32" y="46" width="8" height="5" rx="1" fill="#7788aa"/>
+  <path d="M24 51 Q22 56 24 58" stroke="#4a5566" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M28 51 Q26 56 28 58" stroke="#4a5566" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M36 51 Q34 56 36 58" stroke="#4a5566" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M40 51 Q42 56 40 58" stroke="#4a5566" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Lightning crackles around body -->
+  <path d="M8 24 L14 28 L10 32" fill="none" stroke="#ffee00" stroke-width="1.5" opacity="0.7"/>
+  <path d="M56 24 L50 28 L54 32" fill="none" stroke="#ffee00" stroke-width="1.5" opacity="0.7"/>
+  <!-- Aerial tag indicator -->
+  <ellipse cx="32" cy="54" rx="12" ry="3" fill="#ffee00" opacity="0.18"/>
+</svg>

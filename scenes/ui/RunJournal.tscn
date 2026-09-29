@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://run_journal"]
+[node name="RunJournal" type="CanvasLayer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+offset_right = 480.0
+offset_bottom = 854.0
+[node name="List" type="VBoxContainer" parent="ScrollContainer"]
+size_flags_horizontal = 3

@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ClassData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/classes/class_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/player/stats.gd" id="2"]
+
+[sub_resource type="Resource" id="SummonerStats"]
+script = ExtResource("2")
+max_hp = 98.0
+current_hp = 98.0
+base_damage = 10.0
+attack_speed = 0.8
+move_speed = 140.0
+crit_chance = 0.06
+crit_multiplier = 2.0
+defence = 1.0
+dodge_chance = 0.0
+lifesteal = 0.0
+xp_multiplier = 1.3
+coin_multiplier = 1.0
+
+[resource]
+script = ExtResource("1")
+class_type = 12
+class_name_text = "Summoner"
+base_stats = SubResource("SummonerStats")
+passive_description = "Spirit Bond: For each active summon, gain 5% damage reduction."
+ability_1_name = "Summon Imp"
+ability_1_description = "Summon a fire imp that attacks enemies."
+ability_2_name = "Soul Link"
+ability_2_description = "Link to a summon — when it dies, explode for AoE damage."
+ultimate_name = "Army of Darkness"
+ultimate_description = "Summon 5 powerful wraiths for 15 seconds."
+ultimate_cooldown = 40.0
+has_stances = false
+is_locked = false

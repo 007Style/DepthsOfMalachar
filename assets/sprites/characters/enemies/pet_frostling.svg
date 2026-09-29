@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Frostling — Ice element pet. Small round snow creature -->
+  <ellipse cx="24" cy="28" rx="14" ry="14" fill="#cce8f4"/>
+  <!-- Ice crystal body texture -->
+  <path d="M18 22 Q24 18 30 22 Q26 20 24 18 Q22 20 18 22 Z" fill="#aaddee" opacity="0.6"/>
+  <!-- Head peeking out (it's mostly a ball) -->
+  <circle cx="24" cy="22" r="10" fill="#ddeefc"/>
+  <!-- Big sleepy eyes -->
+  <ellipse cx="20" cy="21" rx="3.5" ry="3.5" fill="#1a3344"/>
+  <ellipse cx="28" cy="21" rx="3.5" ry="3.5" fill="#1a3344"/>
+  <circle cx="20" cy="21" r="2" fill="#88ccee"/>
+  <circle cx="28" cy="21" r="2" fill="#88ccee"/>
+  <circle cx="20.7" cy="20.3" r="0.8" fill="#ffffff"/>
+  <circle cx="28.7" cy="20.3" r="0.8" fill="#ffffff"/>
+  <!-- Happy mouth -->
+  <path d="M21 26 Q24 29 27 26" fill="none" stroke="#2255aa" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Ice spike crown -->
+  <polygon points="20,14 21,10 22,14" fill="#aaddff"/>
+  <polygon points="24,13 25,8 26,13" fill="#cceeff"/>
+  <polygon points="28,14 29,10 30,14" fill="#aaddff"/>
+  <!-- Tiny arms/flippers -->
+  <ellipse cx="12" cy="28" rx="4" ry="3" fill="#bbddf0" transform="rotate(-20,12,28)"/>
+  <ellipse cx="36" cy="28" rx="4" ry="3" fill="#bbddf0" transform="rotate(20,36,28)"/>
+  <!-- Base shadow -->
+  <ellipse cx="24" cy="42" rx="10" ry="3" fill="#aaccdd" opacity="0.4"/>
+</svg>

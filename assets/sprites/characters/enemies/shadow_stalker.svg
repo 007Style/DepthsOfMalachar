@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Nearly invisible / semi-transparent dark body -->
+  <ellipse cx="32" cy="38" rx="14" ry="20" fill="#110022" opacity="0.7"/>
+  <!-- Shadow wisps around body -->
+  <ellipse cx="20" cy="36" rx="8" ry="12" fill="#220033" opacity="0.35"/>
+  <ellipse cx="44" cy="36" rx="8" ry="12" fill="#220033" opacity="0.35"/>
+  <!-- Hood / cloak -->
+  <path d="M18 22 Q20 12 32 8 Q44 12 46 22 L44 44 Q40 52 32 54 Q24 52 20 44 Z" fill="#1a0033" opacity="0.85"/>
+  <!-- Eyes — the only clearly visible thing, sinister red slits -->
+  <ellipse cx="26" cy="28" rx="4" ry="2.5" fill="#440011"/>
+  <ellipse cx="38" cy="28" rx="4" ry="2.5" fill="#440011"/>
+  <ellipse cx="26" cy="28" rx="2.5" ry="1.5" fill="#ff0033" opacity="0.95"/>
+  <ellipse cx="38" cy="28" rx="2.5" ry="1.5" fill="#ff0033" opacity="0.95"/>
+  <!-- Glowing red pupils -->
+  <ellipse cx="26" cy="28" rx="1" ry="1" fill="#ff6666"/>
+  <ellipse cx="38" cy="28" rx="1" ry="1" fill="#ff6666"/>
+  <!-- Shadow dagger in hand -->
+  <rect x="44" y="34" width="3" height="14" rx="1" fill="#331144"/>
+  <polygon points="45.5,34 44,38 47,38" fill="#550066"/>
+  <!-- Faint outline suggestion of form -->
+  <ellipse cx="32" cy="38" rx="14" ry="20" fill="none" stroke="#440066" stroke-width="1" opacity="0.4"/>
+  <!-- Shadow footprints / pool of dark -->
+  <ellipse cx="32" cy="56" rx="10" ry="4" fill="#220033" opacity="0.5"/>
+  <!-- Ambush indicator — claw marks -->
+  <line x1="10" y1="16" x2="16" y2="24" stroke="#550022" stroke-width="1.5" opacity="0.5"/>
+  <line x1="12" y1="14" x2="18" y2="22" stroke="#550022" stroke-width="1.5" opacity="0.5"/>
+</svg>

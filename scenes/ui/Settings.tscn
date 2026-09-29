@@ -1,0 +1,58 @@
+[gd_scene load_steps=2 format=3 uid="uid://settings_ui"]
+[ext_resource type="Script" path="res://scripts/ui/settings.gd" id="1_settings"]
+[node name="Settings" type="CanvasLayer"]
+script = ExtResource("1_settings")
+[node name="Panel" type="PanelContainer" parent="."]
+offset_left = 20.0
+offset_top = 80.0
+offset_right = 460.0
+offset_bottom = 780.0
+[node name="MusicSlider" type="HSlider" parent="Panel"]
+offset_left = 10.0
+offset_top = 60.0
+offset_right = 390.0
+offset_bottom = 80.0
+min_value = 0.0
+max_value = 1.0
+step = 0.05
+value = 0.8
+[node name="SFXSlider" type="HSlider" parent="Panel"]
+offset_left = 10.0
+offset_top = 110.0
+offset_right = 390.0
+offset_bottom = 130.0
+min_value = 0.0
+max_value = 1.0
+step = 0.05
+value = 1.0
+[node name="ShakeToggle" type="CheckButton" parent="Panel"]
+offset_left = 10.0
+offset_top = 160.0
+offset_right = 390.0
+offset_bottom = 190.0
+text = "Screen Shake"
+button_pressed = true
+[node name="AutolootToggle" type="CheckButton" parent="Panel"]
+offset_left = 10.0
+offset_top = 200.0
+offset_right = 390.0
+offset_bottom = 230.0
+text = "Auto-Loot"
+[node name="ColorblindToggle" type="CheckButton" parent="Panel"]
+offset_left = 10.0
+offset_top = 240.0
+offset_right = 390.0
+offset_bottom = 270.0
+text = "Colorblind Mode"
+[node name="LargerUIToggle" type="CheckButton" parent="Panel"]
+offset_left = 10.0
+offset_top = 280.0
+offset_right = 390.0
+offset_bottom = 310.0
+text = "Larger UI"
+[node name="CloseButton" type="Button" parent="Panel"]
+offset_left = 160.0
+offset_top = 600.0
+offset_right = 230.0
+offset_bottom = 636.0
+text = "Close"

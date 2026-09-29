@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ClassData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/classes/class_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/player/stats.gd" id="2"]
+
+[sub_resource type="Resource" id="RogueStats"]
+script = ExtResource("2")
+max_hp = 100.0
+current_hp = 100.0
+base_damage = 16.0
+attack_speed = 1.4
+move_speed = 175.0
+crit_chance = 0.20
+crit_multiplier = 3.0
+defence = 0.0
+dodge_chance = 0.10
+lifesteal = 0.0
+xp_multiplier = 1.0
+coin_multiplier = 1.2
+
+[resource]
+script = ExtResource("1")
+class_type = 2
+class_name_text = "Rogue"
+base_stats = SubResource("RogueStats")
+passive_description = "Backstab: Attacks from behind deal 50% bonus damage."
+ability_1_name = "Vanish"
+ability_1_description = "Turn invisible for 3 seconds. Next attack is guaranteed crit."
+ability_2_name = "Smoke Bomb"
+ability_2_description = "Throw a smoke bomb blinding nearby enemies for 2 seconds."
+ultimate_name = "Death Mark"
+ultimate_description = "Mark a target — it takes 100% bonus damage for 10 seconds."
+ultimate_cooldown = 22.0
+has_stances = false
+is_locked = false

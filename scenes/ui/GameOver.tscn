@@ -1,0 +1,58 @@
+[gd_scene load_steps=2 format=3 uid="uid://game_over"]
+[ext_resource type="Script" path="res://scripts/ui/game_over.gd" id="1_go"]
+[node name="GameOver" type="CanvasLayer"]
+script = ExtResource("1_go")
+[node name="Panel" type="PanelContainer" parent="."]
+offset_left = 40.0
+offset_top = 100.0
+offset_right = 440.0
+offset_bottom = 760.0
+[node name="TitleLabel" type="Label" parent="Panel"]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 390.0
+offset_bottom = 50.0
+text = "Run Ended"
+horizontal_alignment = 1
+[node name="ClassLabel" type="Label" parent="Panel"]
+offset_left = 10.0
+offset_top = 60.0
+offset_right = 390.0
+offset_bottom = 90.0
+text = "Class: Warrior"
+[node name="FloorLabel" type="Label" parent="Panel"]
+offset_left = 10.0
+offset_top = 100.0
+offset_right = 390.0
+offset_bottom = 130.0
+text = "Deepest Floor: 0"
+[node name="EnemiesLabel" type="Label" parent="Panel"]
+offset_left = 10.0
+offset_top = 140.0
+offset_right = 390.0
+offset_bottom = 170.0
+text = "Enemies Slain: 0"
+[node name="CoinsLabel" type="Label" parent="Panel"]
+offset_left = 10.0
+offset_top = 180.0
+offset_right = 390.0
+offset_bottom = 210.0
+text = "Coins: 0g 0s 0c"
+[node name="RecruitsLabel" type="Label" parent="Panel"]
+offset_left = 10.0
+offset_top = 220.0
+offset_right = 390.0
+offset_bottom = 250.0
+text = "Recruits Lost: 0"
+[node name="KeepWeaponButton" type="Button" parent="Panel"]
+offset_left = 20.0
+offset_top = 560.0
+offset_right = 380.0
+offset_bottom = 600.0
+text = "Keep a Weapon"
+[node name="ReturnButton" type="Button" parent="Panel"]
+offset_left = 20.0
+offset_top = 610.0
+offset_right = 380.0
+offset_bottom = 650.0
+text = "Return to Base"

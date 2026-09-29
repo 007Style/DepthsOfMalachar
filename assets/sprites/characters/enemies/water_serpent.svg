@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Long serpent body — blue-green water scales -->
+  <ellipse cx="32" cy="44" rx="16" ry="14" fill="#1a6688"/>
+  <!-- Coiled body sections -->
+  <ellipse cx="32" cy="50" rx="20" ry="10" fill="#1a7799" opacity="0.85"/>
+  <!-- Scale pattern -->
+  <path d="M18 44 Q20 40 24 44 Q26 40 30 44 Q32 40 36 44 Q38 40 42 44 Q44 40 46 44" fill="none" stroke="#0a4466" stroke-width="1.5" opacity="0.7"/>
+  <path d="M16 50 Q20 46 24 50 Q28 46 32 50 Q36 46 40 50 Q44 46 48 50" fill="none" stroke="#0a4466" stroke-width="1.5" opacity="0.7"/>
+  <!-- Serpent head rising up -->
+  <ellipse cx="32" cy="26" rx="13" ry="11" fill="#2277aa"/>
+  <!-- Neck -->
+  <rect x="26" y="34" width="12" height="10" rx="4" fill="#1a6688"/>
+  <!-- Forked tongue -->
+  <path d="M32 34 Q34 38 36 36" fill="none" stroke="#ff4444" stroke-width="2" stroke-linecap="round"/>
+  <path d="M32 34 Q30 38 28 36" fill="none" stroke="#ff4444" stroke-width="2" stroke-linecap="round"/>
+  <!-- Eyes — cold reptilian gold -->
+  <ellipse cx="26" cy="24" rx="4" ry="4" fill="#0a2233"/>
+  <ellipse cx="38" cy="24" rx="4" ry="4" fill="#0a2233"/>
+  <ellipse cx="26" cy="24" rx="2.5" ry="3" fill="#ffcc44" opacity="0.95"/>
+  <ellipse cx="38" cy="24" rx="2.5" ry="3" fill="#ffcc44" opacity="0.95"/>
+  <!-- Slit pupils -->
+  <rect x="25.5" y="22" width="1" height="4" rx="0.5" fill="#0a1a00"/>
+  <rect x="37.5" y="22" width="1" height="4" rx="0.5" fill="#0a1a00"/>
+  <!-- Crest/fin on head -->
+  <path d="M20 20 Q24 12 32 16 Q40 12 44 20" fill="none" stroke="#44aacc" stroke-width="2"/>
+  <!-- Water flood effect around base -->
+  <ellipse cx="32" cy="58" rx="24" ry="6" fill="#1a4466" opacity="0.5"/>
+  <ellipse cx="32" cy="58" rx="20" ry="4" fill="#2266aa" opacity="0.4"/>
+  <!-- Bubble effects -->
+  <circle cx="18" cy="54" r="2.5" fill="none" stroke="#66bbdd" stroke-width="1" opacity="0.6"/>
+  <circle cx="46" cy="52" r="2" fill="none" stroke="#66bbdd" stroke-width="1" opacity="0.6"/>
+  <circle cx="10" cy="56" r="1.5" fill="none" stroke="#66bbdd" stroke-width="1" opacity="0.5"/>
+</svg>

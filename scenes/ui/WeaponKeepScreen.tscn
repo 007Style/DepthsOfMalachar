@@ -1,0 +1,48 @@
+[gd_scene load_steps=2 format=3 uid="uid://weapon_keep_screen"]
+
+[ext_resource type="Script" path="res://scripts/ui/weapon_keep_screen.gd" id="1_wks"]
+
+[node name="WeaponKeepScreen" type="CanvasLayer"]
+script = ExtResource("1_wks")
+
+[node name="Panel" type="PanelContainer" parent="."]
+offset_left = 40.0
+offset_top = 80.0
+offset_right = 440.0
+offset_bottom = 780.0
+
+[node name="TitleLabel" type="Label" parent="Panel"]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 390.0
+offset_bottom = 44.0
+text = "Choose One Weapon to Keep"
+horizontal_alignment = 1
+
+[node name="WeaponList" type="VBoxContainer" parent="Panel"]
+offset_left = 10.0
+offset_top = 50.0
+offset_right = 390.0
+offset_bottom = 580.0
+
+[node name="SelectedLabel" type="Label" parent="Panel"]
+offset_left = 10.0
+offset_top = 590.0
+offset_right = 390.0
+offset_bottom = 620.0
+text = "None selected"
+
+[node name="KeepButton" type="Button" parent="Panel"]
+offset_left = 30.0
+offset_top = 630.0
+offset_right = 190.0
+offset_bottom = 670.0
+text = "Keep This Weapon"
+disabled = true
+
+[node name="DiscardButton" type="Button" parent="Panel"]
+offset_left = 210.0
+offset_top = 630.0
+offset_right = 370.0
+offset_bottom = 670.0
+text = "Keep Nothing"

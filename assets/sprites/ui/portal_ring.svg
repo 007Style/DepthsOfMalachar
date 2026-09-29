@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="portalCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="25%" stop-color="#f472b6" stop-opacity="0.9"/>
+      <stop offset="55%" stop-color="#a855f7" stop-opacity="0.8"/>
+      <stop offset="85%" stop-color="#4c1d95" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#1e1b4b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="runeRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb7185"/>
+      <stop offset="50%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Swirl Rays -->
+  <circle cx="32" cy="32" r="28" fill="none" stroke="url(#runeRing)" stroke-width="1.5" stroke-dasharray="4, 3" opacity="0.7"/>
+  <circle cx="32" cy="32" r="23" fill="none" stroke="url(#runeRing)" stroke-width="1" stroke-dasharray="8, 4" opacity="0.5"/>
+
+  <!-- Energy Vortex -->
+  <circle cx="32" cy="32" r="25" fill="url(#portalCore)"/>
+
+  <!-- Swirling Arms -->
+  <path d="M 32 32 Q 46 20 48 32 Q 50 44 32 32 Z" fill="#e879f9" opacity="0.6"/>
+  <path d="M 32 32 Q 18 44 16 32 Q 14 20 32 32 Z" fill="#e879f9" opacity="0.6"/>
+  <path d="M 32 32 Q 20 18 32 16 Q 44 14 32 32 Z" fill="#818cf8" opacity="0.6"/>
+  <path d="M 32 32 Q 44 46 32 48 Q 20 50 32 32 Z" fill="#818cf8" opacity="0.6"/>
+
+  <!-- Brilliant Core -->
+  <circle cx="32" cy="32" r="7" fill="#ffffff"/>
+  <circle cx="32" cy="32" r="10" fill="#ffffff" opacity="0.4"/>
+</svg>

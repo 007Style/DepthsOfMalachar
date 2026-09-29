@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+  <!-- ROGUE — Dark leather, hood, twin daggers, green poison vials, smirk -->
+  <!-- Colour palette: charcoal black, forest green, silver blade, amber eyes -->
+  <ellipse cx="32" cy="47" rx="13" ry="5" fill="#050a05" opacity="0.4"/>
+  <!-- Legs — dark leather -->
+  <rect x="23" y="42" width="8" height="14" rx="3" fill="#1a2010"/>
+  <rect x="33" y="42" width="8" height="14" rx="3" fill="#1a2010"/>
+  <rect x="22" y="52" width="10" height="8" rx="2" fill="#101508"/>
+  <rect x="32" y="52" width="10" height="8" rx="2" fill="#101508"/>
+  <!-- Body — tight leather armour -->
+  <rect x="21" y="22" width="22" height="22" rx="4" fill="#1e2818"/>
+  <!-- Leather panel detail -->
+  <rect x="23" y="24" width="8" height="10" rx="2" fill="#283520"/>
+  <rect x="33" y="24" width="8" height="10" rx="2" fill="#283520"/>
+  <!-- Poison vials on belt -->
+  <ellipse cx="26" cy="34" rx="2" ry="3" fill="#20c040"/>
+  <ellipse cx="38" cy="34" rx="2" ry="3" fill="#20c040"/>
+  <ellipse cx="26" cy="32" rx="1.5" ry="1.5" fill="#80ff90"/>
+  <ellipse cx="38" cy="32" rx="1.5" ry="1.5" fill="#80ff90"/>
+  <!-- Belt -->
+  <rect x="21" y="33" width="22" height="2.5" rx="1" fill="#3a4830"/>
+  <ellipse cx="32" cy="34.25" rx="2.5" ry="2.5" fill="#506040"/>
+  <!-- Arms — lean, wrapped -->
+  <rect x="12" y="24" width="8" height="14" rx="3" fill="#1e2818"/>
+  <rect x="44" y="24" width="8" height="14" rx="3" fill="#1e2818"/>
+  <!-- Gloves -->
+  <ellipse cx="16" cy="40" rx="4" ry="3" fill="#101508"/>
+  <ellipse cx="48" cy="40" rx="4" ry="3" fill="#101508"/>
+  <!-- Twin daggers (both hands, crossed at hips) -->
+  <rect x="7" y="32" width="2" height="14" rx="1" fill="#c8d0c8" transform="rotate(30,8,39)"/>
+  <rect x="5" y="36" width="6" height="2" rx="1" fill="#506040" transform="rotate(30,8,39)"/>
+  <rect x="55" y="32" width="2" height="14" rx="1" fill="#c8d0c8" transform="rotate(-30,56,39)"/>
+  <rect x="53" y="36" width="6" height="2" rx="1" fill="#506040" transform="rotate(-30,56,39)"/>
+  <!-- Hood/cowl -->
+  <path d="M20,18 Q20,6 32,4 Q44,6 44,18 Q42,14 32,12 Q22,14 20,18 Z" fill="#141c10"/>
+  <path d="M20,20 Q20,10 32,8 Q44,10 44,20 L42,22 Q36,16 32,16 Q28,16 22,22 Z" fill="#1e2818"/>
+  <!-- Face — partially shadowed by hood, amber eyes -->
+  <ellipse cx="32" cy="20" rx="9" ry="8" fill="#c8b090"/>
+  <!-- Hood shadow over top of face -->
+  <ellipse cx="32" cy="15" rx="9" ry="5" fill="#141c10" opacity="0.7"/>
+  <!-- Eyes — amber, sharp -->
+  <ellipse cx="28" cy="20" rx="2.5" ry="2.5" fill="#201000"/>
+  <ellipse cx="36" cy="20" rx="2.5" ry="2.5" fill="#201000"/>
+  <ellipse cx="28" cy="20" rx="1.8" ry="1.8" fill="#e08000"/>
+  <ellipse cx="36" cy="20" rx="1.8" ry="1.8" fill="#e08000"/>
+  <ellipse cx="28.5" cy="19.5" rx="0.8" ry="0.8" fill="#ffc040"/>
+  <ellipse cx="36.5" cy="19.5" rx="0.8" ry="0.8" fill="#ffc040"/>
+  <!-- Eyebrows — sharp, slightly arched -->
+  <path d="M25.5,17.5 Q28,16.5 30.5,17.8" stroke="#504030" stroke-width="1.2" fill="none"/>
+  <path d="M33.5,17.8 Q36,16.5 38.5,17.5" stroke="#504030" stroke-width="1.2" fill="none"/>
+  <!-- Nose -->
+  <ellipse cx="32" cy="22" rx="1" ry="0.8" fill="#b09070"/>
+  <!-- Smirk — confident expression -->
+  <path d="M29,24 Q32,25.5 35,24 Q34,26 32,26 Q30,26 29,24 Z" fill="#804040"/>
+  <path d="M29,24 Q33,26 35,24" stroke="#603030" stroke-width="0.8" fill="none"/>
+  <!-- Scar across left cheek -->
+  <path d="M24,21 Q26,22.5 27,21" stroke="#a07050" stroke-width="0.8" fill="none"/>
+</svg>

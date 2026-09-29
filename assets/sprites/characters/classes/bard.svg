@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+  <!-- BARD — Colourful performance clothes, lute, feathered hat, charming expression -->
+  <!-- Colour palette: deep purple, gold, teal accents, bright warm skin, curly dark hair -->
+  <ellipse cx="32" cy="47" rx="13" ry="5" fill="#100020" opacity="0.4"/>
+  <!-- Legs — fitted performer's trousers -->
+  <rect x="23" y="42" width="9" height="14" rx="3" fill="#3a0060"/>
+  <rect x="32" y="42" width="9" height="14" rx="3" fill="#3a0060"/>
+  <!-- Knee ribbons -->
+  <rect x="22" y="48" width="11" height="3" rx="1" fill="#c8a030"/>
+  <rect x="31" y="48" width="11" height="3" rx="1" fill="#c8a030"/>
+  <rect x="22" y="52" width="11" height="8" rx="2" fill="#2a0040"/>
+  <rect x="31" y="52" width="11" height="8" rx="2" fill="#2a0040"/>
+  <!-- Body — doublet with ruffled collar -->
+  <rect x="20" y="22" width="24" height="22" rx="4" fill="#4a0080"/>
+  <!-- Colourful patches/designs on doublet -->
+  <rect x="22" y="24" width="8" height="8" rx="2" fill="#008060"/>
+  <rect x="34" y="24" width="8" height="8" rx="2" fill="#c82020"/>
+  <rect x="22" y="34" width="8" height="8" rx="2" fill="#c08020"/>
+  <rect x="34" y="34" width="8" height="8" rx="2" fill="#0060a0"/>
+  <!-- Ruffled collar at neck -->
+  <path d="M22,22 Q26,16 32,18 Q38,16 42,22 Q38,24 32,22 Q26,24 22,22 Z" fill="#e8e0c8"/>
+  <!-- Gold trim on doublet -->
+  <rect x="20" y="22" width="24" height="2" rx="1" fill="#c8a030"/>
+  <rect x="20" y="42" width="24" height="2" rx="1" fill="#c8a030"/>
+  <!-- Lute (slung on back/left side) -->
+  <ellipse cx="10" cy="38" rx="7" ry="9" fill="#8a4010"/>
+  <ellipse cx="10" cy="38" rx="5" ry="7" fill="#a85020"/>
+  <!-- Lute sound hole -->
+  <ellipse cx="10" cy="40" rx="2" ry="2" fill="#5a2800"/>
+  <!-- Lute neck -->
+  <rect x="8" y="24" width="3" height="18" rx="1.5" fill="#7a3810"/>
+  <!-- Lute strings -->
+  <line x1="9" y1="26" x2="9" y2="44" stroke="#e0d8a8" stroke-width="0.6"/>
+  <line x1="10" y1="26" x2="10" y2="44" stroke="#e0d8a8" stroke-width="0.6"/>
+  <line x1="11" y1="26" x2="11" y2="44" stroke="#e0d8a8" stroke-width="0.6"/>
+  <!-- Arms -->
+  <rect x="11" y="24" width="9" height="14" rx="4" fill="#4a0080"/>
+  <rect x="44" y="24" width="9" height="14" rx="4" fill="#4a0080"/>
+  <!-- Performing hand with finger sparkle -->
+  <ellipse cx="49" cy="40" rx="4" ry="3" fill="#d8a878"/>
+  <circle cx="48" cy="38" r="1.5" fill="#ffd060" opacity="0.8"/>
+  <circle cx="51" cy="37" r="1" fill="#ffd060" opacity="0.7"/>
+  <circle cx="52" cy="40" r="1" fill="#ffd060" opacity="0.6"/>
+  <!-- Feathered hat — wide brim, purple with teal feather -->
+  <ellipse cx="32" cy="14" rx="16" ry="4" fill="#3a0060"/>
+  <rect x="20" y="8" width="24" height="8" rx="4" fill="#4a0080"/>
+  <!-- Hat band -->
+  <rect x="20" y="12" width="24" height="2" rx="1" fill="#c8a030"/>
+  <!-- Teal feather -->
+  <path d="M44,12 Q50,4 52,0 Q50,6 46,10 Q44,12 42,12 Z" fill="#008080"/>
+  <path d="M44,12 Q52,6 54,2" stroke="#00c0a0" stroke-width="1" fill="none"/>
+  <!-- Face — warm, charming, curly dark hair peeking from hat -->
+  <!-- Curly hair wisps -->
+  <path d="M20,14 Q16,10 18,6 Q20,8 20,12" fill="#301808"/>
+  <path d="M44,14 Q48,10 46,6 Q44,8 44,12" fill="#301808"/>
+  <path d="M22,12 Q20,8 22,6" stroke="#301808" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M42,12 Q44,8 42,6" stroke="#301808" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Face -->
+  <ellipse cx="32" cy="18" rx="9" ry="8" fill="#d4a070"/>
+  <!-- Eyes — warm brown, playful -->
+  <ellipse cx="28" cy="17" rx="2.5" ry="2.5" fill="#180800"/>
+  <ellipse cx="36" cy="17" rx="2.5" ry="2.5" fill="#180800"/>
+  <ellipse cx="28" cy="17" rx="1.8" ry="1.8" fill="#6a3808"/>
+  <ellipse cx="36" cy="17" rx="1.8" ry="1.8" fill="#6a3808"/>
+  <ellipse cx="28.5" cy="16.5" rx="0.8" ry="0.8" fill="#d09050"/>
+  <ellipse cx="36.5" cy="16.5" rx="0.8" ry="0.8" fill="#d09050"/>
+  <!-- Winking left eye -->
+  <path d="M25.5,17 Q28,18.5 30.5,17" stroke="#180800" stroke-width="1.2" fill="none" opacity="0.8"/>
+  <!-- Raised eyebrow (right) -->
+  <path d="M33.5,14.5 Q36,13.5 38.5,15" stroke="#504030" stroke-width="1.2" fill="none"/>
+  <!-- Nose -->
+  <ellipse cx="32" cy="19.5" rx="1" ry="0.8" fill="#b08050"/>
+  <!-- Charming wide smile -->
+  <path d="M28,22 Q32,25.5 36,22 Q35,24 32,25 Q29,24 28,22 Z" fill="#9a2020"/>
+  <path d="M29,22 Q32,23.5 35,22" stroke="#c04040" stroke-width="0.8" fill="none"/>
+  <!-- Dimple -->
+  <ellipse cx="36.5" cy="23" rx="1" ry="0.8" fill="#c08050" opacity="0.5"/>
+</svg>

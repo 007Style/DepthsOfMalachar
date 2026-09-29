@@ -1,0 +1,469 @@
+[gd_scene load_steps=16 format=3 uid="uid://hud_scene"]
+
+[ext_resource type="Script" path="res://scripts/ui/hud.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/ui/virtual_joystick.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/ui/cooldown_arc.gd" id="3"]
+[ext_resource type="Texture2D" path="res://assets/sprites/ui/joystick_base.svg" id="4"]
+[ext_resource type="Texture2D" path="res://assets/sprites/ui/joystick_knob.svg" id="5"]
+[ext_resource type="Texture2D" path="res://assets/sprites/ui/btn_attack.svg" id="6"]
+[ext_resource type="Texture2D" path="res://assets/sprites/ui/btn_ability1.svg" id="7"]
+[ext_resource type="Texture2D" path="res://assets/sprites/ui/btn_ability2.svg" id="8"]
+[ext_resource type="Texture2D" path="res://assets/sprites/ui/btn_ultimate.svg" id="9"]
+
+[sub_resource type="StyleBoxFlat" id="hp_style"]
+bg_color = Color(0.18, 0.80, 0.18, 0.9)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_left = 6
+corner_radius_bottom_right = 6
+
+[sub_resource type="StyleBoxFlat" id="hp_bg_style"]
+bg_color = Color(0.08, 0.08, 0.08, 0.75)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_left = 6
+corner_radius_bottom_right = 6
+
+[sub_resource type="StyleBoxFlat" id="recruit_hp_style"]
+bg_color = Color(0.20, 0.60, 0.90, 0.9)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_left = 4
+corner_radius_bottom_right = 4
+
+[sub_resource type="StyleBoxFlat" id="inventory_panel_style"]
+bg_color = Color(0.05, 0.04, 0.10, 0.92)
+border_width_top = 2
+border_width_left = 2
+border_width_right = 2
+border_color = Color(0.35, 0.28, 0.55, 0.8)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+
+[sub_resource type="StyleBoxFlat" id="revive_panel_style"]
+bg_color = Color(0.06, 0.03, 0.12, 0.95)
+border_width_top = 2
+border_color = Color(0.55, 0.20, 0.80, 0.9)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_left = 14
+corner_radius_bottom_right = 14
+
+[node name="HUD" type="CanvasLayer"]
+layer = 10
+script = ExtResource("1")
+
+[node name="FadeOverlay" type="ColorRect" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 0)
+mouse_filter = 2
+
+[node name="FadeAnim" type="AnimationPlayer" parent="FadeOverlay"]
+
+[node name="TopBar" type="HBoxContainer" parent="."]
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 0.0
+offset_top = 8.0
+offset_bottom = 56.0
+offset_left = 10.0
+offset_right = -10.0
+
+[node name="PlayerHP" type="ProgressBar" parent="TopBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 0.0
+max_value = 100.0
+value = 100.0
+show_percentage = false
+custom_minimum_size = Vector2(0, 22)
+theme_override_styles/fill = SubResource("hp_style")
+theme_override_styles/background = SubResource("hp_bg_style")
+
+[node name="HPLabel" type="Label" parent="TopBar/PlayerHP"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+text = "100 / 100"
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(1, 1, 1, 0.95)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+
+[node name="RecruitHP" type="ProgressBar" parent="TopBar"]
+layout_mode = 2
+size_flags_horizontal = 2
+min_value = 0.0
+max_value = 100.0
+value = 100.0
+show_percentage = false
+custom_minimum_size = Vector2(0, 18)
+visible = false
+theme_override_styles/fill = SubResource("recruit_hp_style")
+theme_override_styles/background = SubResource("hp_bg_style")
+
+[node name="HPLabel" type="Label" parent="TopBar/RecruitHP"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+text = "Recruit"
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_font_sizes/font_size = 10
+theme_override_colors/font_color = Color(1, 1, 1, 0.9)
+
+[node name="FloorLabel" type="Label" parent="TopBar"]
+layout_mode = 2
+text = "Floor 1"
+theme_override_font_sizes/font_size = 13
+theme_override_colors/font_color = Color(0.95, 0.90, 0.70, 1.0)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.9)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+
+[node name="NGPlusLabel" type="Label" parent="TopBar"]
+layout_mode = 2
+text = ""
+visible = false
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(1.0, 0.3, 0.1, 1.0)
+
+[node name="Coins" type="HBoxContainer" parent="TopBar"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="CopperLabel" type="Label" parent="TopBar/Coins"]
+layout_mode = 2
+text = "0🟤"
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.80, 0.50, 0.20, 1.0)
+
+[node name="SilverLabel" type="Label" parent="TopBar/Coins"]
+layout_mode = 2
+text = "0⬜"
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.80, 0.80, 0.85, 1.0)
+
+[node name="GoldLabel" type="Label" parent="TopBar/Coins"]
+layout_mode = 2
+text = "0🟡"
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(1.0, 0.80, 0.10, 1.0)
+
+[node name="Left" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+offset_left = 18.0
+offset_top = -180.0
+offset_right = 168.0
+offset_bottom = -18.0
+
+[node name="VirtualJoystick" type="Control" parent="Left"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("2")
+
+[node name="BaseCircle" type="TextureRect" parent="Left/VirtualJoystick"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource("4")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Knob" type="TextureRect" parent="Left/VirtualJoystick/BaseCircle"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+texture = ExtResource("5")
+
+[node name="Right" type="VBoxContainer" parent="."]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -200.0
+offset_top = -310.0
+offset_right = -10.0
+offset_bottom = -10.0
+alignment = 2
+
+[node name="BtnUltimate" type="TouchScreenButton" parent="Right"]
+custom_minimum_size = Vector2(76, 76)
+normal = ExtResource("9")
+passby_press = false
+
+[node name="CooldownArc" type="Control" parent="Right/BtnUltimate"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("3")
+mouse_filter = 2
+
+[node name="BtnAbility2" type="TouchScreenButton" parent="Right"]
+custom_minimum_size = Vector2(68, 68)
+normal = ExtResource("8")
+
+[node name="BtnAbility1" type="TouchScreenButton" parent="Right"]
+custom_minimum_size = Vector2(68, 68)
+normal = ExtResource("7")
+
+[node name="BtnAttack" type="TouchScreenButton" parent="Right"]
+custom_minimum_size = Vector2(80, 80)
+normal = ExtResource("6")
+
+[node name="BtnStance" type="TouchScreenButton" parent="."]
+layout_mode = 3
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 1.0
+offset_left = 18.0
+offset_top = -230.0
+offset_right = 78.0
+offset_bottom = -170.0
+visible = false
+
+[node name="BtnRage" type="TouchScreenButton" parent="."]
+layout_mode = 3
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 1.0
+offset_left = 90.0
+offset_top = -230.0
+offset_right = 150.0
+offset_bottom = -170.0
+visible = false
+
+[node name="RageBar" type="ProgressBar" parent="."]
+layout_mode = 3
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 1.0
+offset_left = 18.0
+offset_top = -200.0
+offset_right = 168.0
+offset_bottom = -186.0
+min_value = 0.0
+max_value = 100.0
+value = 0.0
+show_percentage = false
+visible = false
+
+[node name="ComboLabel" type="Label" parent="."]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -20.0
+offset_right = 40.0
+offset_bottom = 20.0
+text = "x1.0"
+horizontal_alignment = 1
+visible = false
+theme_override_font_sizes/font_size = 22
+theme_override_colors/font_color = Color(1.0, 0.8, 0.1, 1.0)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.9)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+
+[node name="PetIcon" type="TextureRect" parent="."]
+layout_mode = 3
+anchors_preset = 0
+anchor_left = 1.0
+anchor_top = 0.0
+offset_left = -60.0
+offset_top = 64.0
+offset_right = -10.0
+offset_bottom = 114.0
+visible = false
+expand_mode = 1
+
+[node name="SendRecruitBtn" type="Button" parent="."]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.0
+anchor_right = 0.5
+anchor_bottom = 0.0
+offset_left = -50.0
+offset_top = 60.0
+offset_right = 50.0
+offset_bottom = 90.0
+text = "↩ Send to Base"
+visible = false
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.3, 0.9, 0.4, 1.0)
+
+[node name="BtnInventory" type="Button" parent="."]
+layout_mode = 3
+anchors_preset = 0
+anchor_left = 1.0
+anchor_top = 1.0
+offset_left = -180.0
+offset_top = -312.0
+offset_right = -110.0
+offset_bottom = -282.0
+text = "🎒 Inv"
+theme_override_font_sizes/font_size = 11
+
+[node name="InventoryPanel" type="PanelContainer" parent="."]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -200.0
+offset_bottom = 0.0
+visible = false
+theme_override_styles/panel = SubResource("inventory_panel_style")
+
+[node name="InventoryVBox" type="VBoxContainer" parent="InventoryPanel"]
+layout_mode = 2
+
+[node name="InventoryTitle" type="Label" parent="InventoryPanel/InventoryVBox"]
+layout_mode = 2
+text = "INVENTORY"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.85, 0.75, 1.0, 1.0)
+
+[node name="WeaponRow" type="HBoxContainer" parent="InventoryPanel/InventoryVBox"]
+layout_mode = 2
+
+[node name="WeaponLabel" type="Label" parent="InventoryPanel/InventoryVBox/WeaponRow"]
+layout_mode = 2
+text = "⚔ "
+theme_override_font_sizes/font_size = 12
+
+[node name="WeaponSlot" type="TextureRect" parent="InventoryPanel/InventoryVBox/WeaponRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(52, 52)
+expand_mode = 1
+
+[node name="ArtifactRow" type="HBoxContainer" parent="InventoryPanel/InventoryVBox"]
+layout_mode = 2
+
+[node name="ArtifactSlot0" type="TextureRect" parent="InventoryPanel/InventoryVBox/ArtifactRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(48, 48)
+expand_mode = 1
+
+[node name="ArtifactSlot1" type="TextureRect" parent="InventoryPanel/InventoryVBox/ArtifactRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(48, 48)
+expand_mode = 1
+
+[node name="ArtifactSlot2" type="TextureRect" parent="InventoryPanel/InventoryVBox/ArtifactRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(48, 48)
+expand_mode = 1
+
+[node name="ArtifactSlot3" type="TextureRect" parent="InventoryPanel/InventoryVBox/ArtifactRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(48, 48)
+expand_mode = 1
+
+[node name="ArtifactSlot4" type="TextureRect" parent="InventoryPanel/InventoryVBox/ArtifactRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(48, 48)
+expand_mode = 1
+
+[node name="RevivePanel" type="PanelContainer" parent="."]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -130.0
+offset_top = -100.0
+offset_right = 130.0
+offset_bottom = 100.0
+visible = false
+theme_override_styles/panel = SubResource("revive_panel_style")
+
+[node name="ReviveVBox" type="VBoxContainer" parent="RevivePanel"]
+layout_mode = 2
+alignment = 1
+
+[node name="DeathLabel" type="Label" parent="RevivePanel/ReviveVBox"]
+layout_mode = 2
+text = "ETHARI HAS FALLEN"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_color = Color(0.9, 0.2, 0.1, 1.0)
+
+[node name="CrystalCount" type="Label" parent="RevivePanel/ReviveVBox"]
+layout_mode = 2
+text = "Revive Crystals: 0"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 13
+theme_override_colors/font_color = Color(0.4, 1.0, 0.6, 1.0)
+
+[node name="BtnRevive" type="Button" parent="RevivePanel/ReviveVBox"]
+layout_mode = 2
+text = "💎 USE REVIVE CRYSTAL"
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.4, 1.0, 0.6, 1.0)
+
+[node name="BtnEndRun" type="Button" parent="RevivePanel/ReviveVBox"]
+layout_mode = 2
+text = "Return to Base"
+theme_override_font_sizes/font_size = 13
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1.0)
+
+[node name="NotificationLabel" type="Label" parent="."]
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 0.0
+offset_top = 62.0
+offset_bottom = 88.0
+text = ""
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.9)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+
+[node name="NotificationTimer" type="Timer" parent="."]
+wait_time = 2.5
+one_shot = true

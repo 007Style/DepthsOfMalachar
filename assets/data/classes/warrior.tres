@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ClassData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/classes/class_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/player/stats.gd" id="2"]
+
+[sub_resource type="Resource" id="WarriorStats"]
+script = ExtResource("2")
+max_hp = 150.0
+current_hp = 150.0
+base_damage = 14.0
+attack_speed = 1.0
+move_speed = 140.0
+crit_chance = 0.05
+crit_multiplier = 2.0
+defence = 5.0
+dodge_chance = 0.0
+lifesteal = 0.0
+xp_multiplier = 1.0
+coin_multiplier = 1.0
+
+[resource]
+script = ExtResource("1")
+class_type = 0
+class_name_text = "Warrior"
+base_stats = SubResource("WarriorStats")
+passive_description = "Iron Will: Gain 10% damage reduction when below 30% HP."
+ability_1_name = "Shield Bash"
+ability_1_description = "Stun a nearby enemy for 1 second."
+ability_2_name = "War Cry"
+ability_2_description = "Boost attack damage by 25% for 5 seconds."
+ultimate_name = "Berserker Rage"
+ultimate_description = "Unleash fury, tripling damage for 8 seconds."
+ultimate_cooldown = 25.0
+has_stances = false
+is_locked = false

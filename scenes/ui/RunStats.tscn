@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://run_stats"]
+[node name="RunStats" type="CanvasLayer"]
+[node name="Panel" type="PanelContainer" parent="."]
+offset_left = 40.0
+offset_top = 80.0
+offset_right = 440.0
+offset_bottom = 780.0

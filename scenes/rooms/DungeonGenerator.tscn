@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dungeon_generator"]
+
+[ext_resource type="Script" path="res://scripts/dungeon/dungeon_generator.gd" id="1_dungeon"]
+[ext_resource type="Script" path="res://scripts/dungeon/biome_manager.gd" id="2_biome"]
+[ext_resource type="PackedScene" path="res://scenes/ui/HUD.tscn" id="3_hud"]
+
+[node name="DungeonGenerator" type="Node2D"]
+script = ExtResource("1_dungeon")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+
+[node name="BiomeManager" type="Node" parent="."]
+script = ExtResource("2_biome")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.85, 0.8, 0.75, 1)
+
+[node name="HUD" type="Node" parent="." instance=ExtResource("3_hud")]

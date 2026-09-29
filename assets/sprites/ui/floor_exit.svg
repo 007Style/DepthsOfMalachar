@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <radialGradient id="portalCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="35%" stop-color="#c084fc" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#7e22ce" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3b0764" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stairsGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Dungeon Staircase Pit -->
+  <!-- Outer Stone Rim -->
+  <rect x="4" y="6" width="40" height="36" rx="4" fill="#0f172a" stroke="#475569" stroke-width="2"/>
+  
+  <!-- Step 1 -->
+  <polygon points="6,8 42,8 38,14 10,14" fill="#334155"/>
+  <!-- Step 2 -->
+  <polygon points="10,14 38,14 34,20 14,20" fill="#1e293b"/>
+  <!-- Step 3 -->
+  <polygon points="14,20 34,20 30,26 18,26" fill="#0f172a"/>
+  <!-- Abyss Depth -->
+  <rect x="18" y="26" width="12" height="12" fill="#020617"/>
+
+  <!-- Mystic Descent Portal Glow -->
+  <ellipse cx="24" cy="30" rx="14" ry="10" fill="url(#portalCenter)"/>
+
+  <!-- Descent Indicator Arrow -->
+  <polygon points="24,36 18,28 22,28 22,22 26,22 26,28 30,28" fill="#e9d5ff" stroke="#6b21a8" stroke-width="0.8"/>
+</svg>

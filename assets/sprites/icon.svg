@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128">
+  <rect width="128" height="128" fill="#1a0a2e"/>
+  <polygon points="64,10 74,40 106,40 81,58 91,88 64,70 37,88 47,58 22,40 54,40" fill="#c0a000"/>
+  <circle cx="64" cy="64" r="20" fill="none" stroke="#7040c0" stroke-width="3"/>
+  <text x="64" y="118" font-family="sans-serif" font-size="10" fill="#8060a0" text-anchor="middle">DEPTHS OF MALACHAR</text>
+</svg>

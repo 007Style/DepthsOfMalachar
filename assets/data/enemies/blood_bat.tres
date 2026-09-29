@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/enemies/enemy_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "blood_bat"
+enemy_name = "Blood Bat"
+display_name = "Blood Bat"
+base_hp = 35.0
+base_damage = 7.0
+move_speed = 120.0
+attack_range = 30.0
+attack_cooldown = 0.8
+element = 0
+coin_type = 0
+coin_drop_min = 1
+coin_drop_max = 3
+xp_reward = 12
+revive_crystal_drop_chance = 0.01
+is_aerial = true
+has_weak_point = false
+weak_point_multiplier = 2.0
+can_evolve = true

@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://base_pet"]
+
+[ext_resource type="Script" path="res://scripts/pets/pet_base.gd" id="1_pet"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1"]
+radius = 16.0
+
+[node name="BasePet" type="CharacterBody2D"]
+script = ExtResource("1_pet")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_1")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+path_desired_distance = 4.0
+target_desired_distance = 4.0
+avoidance_enabled = true
+
+[node name="AttackArea" type="Area2D" parent="."]
+
+[node name="AttackAreaShape" type="CollisionShape2D" parent="AttackArea"]
+shape = SubResource("CircleShape2D_1")
